@@ -2303,7 +2303,7 @@ table.kv tbody tr:last-child td {
       </section>
     </aside>
     <section id="map-wrap">
-      <svg id="map" class="map" role="img" aria-label="Europe 1853-1871 historical map"></svg>
+      <svg id="map" class="map" role="img" aria-label="Europe 1815-1914 historical map"></svg>
       <div id="tooltip" class="tooltip" hidden></div>
       <div id="map-hint" class="map-hint">拖曳平移 · 滾輪縮放 · 點選國家看說明</div>
       <div id="map-scale" class="map-scale"></div>
@@ -4886,7 +4886,7 @@ window.DATA = {"meta":{"title":"Europe, 1815–1914","subtitle":"From the Concer
 
 </script>
 <script>
-/* Europe 1853-1871 — interactive historical atlas
+/* Europe 1815-1914 — interactive historical atlas
  * Rendering core: Lambert Conformal Conic projection, region fills, shared-boundary
  * edge topology (recoloured per era), draggable borders, timeline, panels. */
 (function () {
@@ -5747,7 +5747,7 @@ window.DATA = {"meta":{"title":"Europe, 1815–1914","subtitle":"From the Concer
     st.selRegion = null;
     while (gEdit.firstChild) gEdit.removeChild(gEdit.firstChild);
     render();
-    toast('疆界已還原為 1853–1871 年的歷史重建值');
+    toast('疆界已還原為 1815–1914 年的歷史重建值');
   }
 
   $('#toolbar').addEventListener('click', function (evt) {
@@ -5859,7 +5859,7 @@ window.DATA = {"meta":{"title":"Europe, 1815–1914","subtitle":"From the Concer
         ctx.fillStyle = '#c9dbe5'; ctx.fillRect(0, 0, cv.width, cv.height);
         ctx.drawImage(img, 0, 0, cv.width, cv.height);
         URL.revokeObjectURL(url);
-        cv.toBlob(function (b) { download(b, 'Europe_1853-1871_' + st.year + '.png'); });
+        cv.toBlob(function (b) { download(b, 'Europe_1815-1914_' + st.year + '.png'); });
       };
       img.onerror = function () { toast('PNG 匯出失敗，請改用瀏覽器列印為 PDF'); };
       img.src = url;
@@ -5867,7 +5867,7 @@ window.DATA = {"meta":{"title":"Europe, 1815–1914","subtitle":"From the Concer
   }
   function exportJSON() {
     var out = {
-      title: 'Europe 1853-1871 border state',
+      title: 'Europe 1815-1914 border state',
       year: st.year,
       generated: new Date().toISOString(),
       note: 'coordinates are [lon,lat] rings per region id',
