@@ -1,0 +1,2554 @@
+{
+  "schema": 1,
+  "note": "Editable course content: events, names, labels, era breakpoints and who owns what. Border geometry lives in index.html (data.js) — change it with the Python pipeline.",
+  "eras": [
+    1815,
+    1830,
+    1848,
+    1853,
+    1856,
+    1859,
+    1860,
+    1861,
+    1864,
+    1866,
+    1867,
+    1870,
+    1871,
+    1878,
+    1881,
+    1885,
+    1905,
+    1908,
+    1912,
+    1913,
+    1914
+  ],
+  "eraLabels": [
+    "Vienna Congress · New Order",
+    "Belgium · Greek independence",
+    "Revolutions of 1848",
+    "Crimean War begins",
+    "Treaty of Paris",
+    "War in Italy · Lombardy",
+    "Central Italy · Savoy & Nice",
+    "Kingdom of Italy",
+    "Schleswig-Holstein",
+    "Austro-Prussian War",
+    "North German Confederation · Ausgleich",
+    "Rome · Franco-Prussian War",
+    "German Empire",
+    "Berlin Congress · Balkans",
+    "Thessaly to Greece",
+    "Bulgaria united · Rumelia",
+    "Norway independent",
+    "Bosnia annexed · Bulgaria",
+    "Balkan Wars begin",
+    "Peace of Bucharest",
+    "Sarajevo · World War I"
+  ],
+  "labels": {
+    "uk": "UNITED KINGDOM",
+    "france": "FRANCE",
+    "prussia": "PRUSSIA",
+    "austria": "AUSTRIA",
+    "austria_hungary": "AUSTRIA-HUNGARY",
+    "russia": "RUSSIA",
+    "ottoman": "OTTOMAN EMPIRE",
+    "italy": "ITALY",
+    "sardinia": "SARDINIA",
+    "spain": "SPAIN",
+    "sweden_norway": "SWEDEN-NORWAY",
+    "denmark": "DENMARK",
+    "bavaria": "BAVARIA",
+    "saxony": "SAXONY",
+    "hanover": "HANOVER",
+    "wuerttemberg": "WÜRTTEMBERG",
+    "baden": "BADEN",
+    "hesse_kassel": "HESSE-KASSEL",
+    "hesse_darmstadt": "HESSE-DARMSTADT",
+    "nassau": "NASSAU",
+    "brunswick": "BRUNSWICK",
+    "mecklenburg": "MECKLENBURG",
+    "oldenburg": "OLDENBURG",
+    "anhalt": "ANHALT",
+    "thuringia": "THURINGIA",
+    "lippe": "LIPPE",
+    "hanse": "HANSE CITIES",
+    "holstein": "HOLSTEIN",
+    "schleswig": "SCHLESWIG",
+    "luxembourg": "LUXEMBOURG",
+    "tuscany": "TUSCANY",
+    "modena": "MODENA",
+    "parma": "PARMA",
+    "papal": "PAPAL STATES",
+    "two_sicilies": "TWO SICILIES",
+    "greece": "GREECE",
+    "serbia": "SERBIA",
+    "romania": "MOLDAVIA & WALLACHIA",
+    "montenegro": "MONTENEGRO",
+    "switzerland": "SWITZERLAND",
+    "belgium": "BELGIUM",
+    "netherlands": "NETHERLANDS",
+    "portugal": "PORTUGAL",
+    "germany": "GERMAN EMPIRE",
+    "ngc": "NORTH GERMAN CONFEDERATION",
+    "united_netherlands": "UNITED NETHERLANDS",
+    "bulgaria": "BULGARIA",
+    "albania": "ALBANIA",
+    "norway": "NORWAY",
+    "sweden": "SWEDEN"
+  },
+  "labelsByEra": {
+    "romania": [
+      [
+        1815,
+        "MOLDAVIA & WALLACHIA"
+      ],
+      [
+        1861,
+        "ROMANIA"
+      ]
+    ]
+  },
+  "entities": {
+    "uk": {
+      "zh": "英國",
+      "formalEn": "United Kingdom of Great Britain and Ireland",
+      "formalZh": "大不列顛及愛爾蘭聯合王國",
+      "capitalEn": "London",
+      "capitalZh": "倫敦",
+      "ruler": "Queen Victoria",
+      "notes": "世界首要工業與海權國家。1854 年與法國結盟抗俄，1856 年主導巴黎和會；同情義大利統一但避免介入歐陸，1860 年代多採不干預政策，以均勢與海峽安全為核心利益。"
+    },
+    "france": {
+      "zh": "法國",
+      "formalEn": "Second French Empire",
+      "formalZh": "法蘭西第二帝國",
+      "capitalEn": "Paris",
+      "capitalZh": "巴黎",
+      "ruler": "Napoleon III",
+      "notes": "拿破崙三世於 1852 年稱帝。克里米亞戰爭與英結盟，1856 年主持巴黎和會；1859 年助薩丁尼亞抗奧，換取薩伏依與尼斯；1870 年普法戰爭戰敗，第二帝國崩潰，第三共和成立。"
+    },
+    "prussia": {
+      "zh": "普魯士",
+      "formalEn": "Kingdom of Prussia",
+      "formalZh": "普魯士王國",
+      "capitalEn": "Berlin",
+      "capitalZh": "柏林",
+      "ruler": "Frederick William IV",
+      "notes": "1850 年代保守，1862 年俾斯麥任首相並推動軍事改革。1864 年聯奧敗丹麥，1866 年敗奧並主導北德意志邦聯，1870 年敗法；1871 年威廉一世稱帝，普魯士成為德意志帝國的核心。"
+    },
+    "austria": {
+      "zh": "奧地利",
+      "formalEn": "Austrian Empire",
+      "formalZh": "奧地利帝國",
+      "capitalEn": "Vienna",
+      "capitalZh": "維也納",
+      "ruler": "Franz Joseph I",
+      "notes": "多民族帝國，1859 年義大利戰爭失去倫巴底，1866 年普奧戰爭敗後退出德意志事務；1867 年與匈牙利折衷，改組為奧匈二元君主國，外交重心轉向巴爾幹與多瑙河。"
+    },
+    "austria_hungary": {
+      "zh": "奧匈帝國",
+      "formalEn": "Austria-Hungary",
+      "formalZh": "奧匈二元君主國",
+      "capitalEn": "Vienna",
+      "capitalZh": "維也納",
+      "ruler": "Franz Joseph I",
+      "notes": "1867 年奧匈折衷後成立，法蘭茲·約瑟夫兼匈牙利國王；外交、國防與財政共同，內政分治。1866 年後退出德意志，與德國關係漸近，同時與俄國在巴爾幹競逐。"
+    },
+    "russia": {
+      "zh": "俄羅斯",
+      "formalEn": "Russian Empire",
+      "formalZh": "俄羅斯帝國",
+      "capitalEn": "St. Petersburg",
+      "capitalZh": "聖彼得堡",
+      "ruler": "Nicholas I",
+      "notes": "尼古拉一世 1853 年佔領多瑙河公國引發克里米亞戰爭，1856 年戰敗，失南比薩拉比亞、黑海中立化。亞歷山大二世推動改革、1861 年解放農奴，1863 年鎮壓波蘭起義；1870 年片面廢除黑海條款。"
+    },
+    "ottoman": {
+      "zh": "鄂圖曼帝國",
+      "formalEn": "Ottoman Empire",
+      "formalZh": "鄂圖曼帝國",
+      "capitalEn": "Constantinople",
+      "capitalZh": "伊斯坦堡",
+      "ruler": "Abdülmecid I",
+      "notes": "1853 年對俄宣戰，得英法援助；1856 年巴黎條約將其領土完整納入歐洲公法，蘇丹被接納為協調制度成員。此後巴爾幹民族主義與財政困難加劇，1870 年代危機加深，被列強視為歐洲病夫。"
+    },
+    "italy": {
+      "zh": "義大利",
+      "formalEn": "Kingdom of Italy",
+      "formalZh": "義大利王國",
+      "capitalEn": "Turin",
+      "capitalZh": "杜林",
+      "ruler": "Victor Emmanuel II (King of Sardinia until 1861)",
+      "notes": "1861 年 3 月 17 日成立，初以杜林為首都（1865 年遷佛羅倫斯、1871 年遷羅馬）。1866 年取得威尼托，1870 年兼併羅馬；與教皇的羅馬問題持續至 1929 年。"
+    },
+    "sardinia": {
+      "zh": "薩丁尼亞",
+      "formalEn": "Kingdom of Sardinia",
+      "formalZh": "薩丁尼亞王國",
+      "capitalEn": "Turin",
+      "capitalZh": "杜林",
+      "ruler": "Victor Emmanuel II",
+      "notes": "薩丁尼亞王國（皮埃蒙特）是義大利統一的核心。1859 年聯法敗奧取得倫巴底，1860 年併中義大利與兩西西里，1861 年改組為義大利王國，維克多·艾曼紐二世為王。"
+    },
+    "spain": {
+      "zh": "西班牙",
+      "formalEn": "Kingdom of Spain",
+      "formalZh": "西班牙王國",
+      "capitalEn": "Madrid",
+      "capitalZh": "馬德里",
+      "ruler": "Isabella II",
+      "notes": "西班牙王國，伊莎貝拉二世統治，政治動盪。1868 年光榮革命推翻女王，1869 年制憲並尋找新君主；1870 年霍亨索倫候選引發普法危機，1873 年成立第一共和。"
+    },
+    "sweden_norway": {
+      "zh": "瑞典-挪威",
+      "formalEn": "United Kingdoms of Sweden and Norway",
+      "formalZh": "瑞典-挪威聯合王國",
+      "capitalEn": "Stockholm",
+      "capitalZh": "斯德哥爾摩",
+      "ruler": "Oscar I",
+      "notes": "瑞典-挪威聯合王國，1853 年由奧斯卡一世統治，1859 年卡爾十五世繼位。克里米亞戰爭保持中立，1864 年丹麥戰爭未介入，1860 年代推動議會改革。"
+    },
+    "denmark": {
+      "zh": "丹麥",
+      "formalEn": "Kingdom of Denmark",
+      "formalZh": "丹麥王國",
+      "capitalEn": "Copenhagen",
+      "capitalZh": "哥本哈根",
+      "ruler": "Frederick VII",
+      "notes": "丹麥王國，1853 年由腓特烈七世統治，1863 年克里斯蒂安九世繼位；1863 年十一月憲法引發戰爭，1864 年戰敗失三公國，此後採中立。"
+    },
+    "bavaria": {
+      "zh": "巴伐利亞",
+      "formalEn": "Kingdom of Bavaria",
+      "formalZh": "巴伐利亞王國",
+      "capitalEn": "Munich",
+      "capitalZh": "慕尼黑",
+      "ruler": "Maximilian II",
+      "notes": "南德最大王國，1866 年站在奧地利一方戰敗，付賠款並與普魯士簽秘密攻守同盟；1871 年加入德意志帝國，保留王室、郵政、鐵路與平時軍隊指揮等特殊權利。"
+    },
+    "saxony": {
+      "zh": "薩克森",
+      "formalEn": "Kingdom of Saxony",
+      "formalZh": "薩克森王國",
+      "capitalEn": "Dresden",
+      "capitalZh": "德勒斯登",
+      "ruler": "Frederick Augustus II",
+      "notes": "1866 年與奧地利結盟，普軍佔領薩克森，戰後國王約翰保留王位，薩克森加入北德意志邦聯；1871 年成為德意志帝國一邦，德勒斯登為文化與工業中心。"
+    },
+    "hanover": {
+      "zh": "漢諾威",
+      "formalEn": "Kingdom of Hanover",
+      "formalZh": "漢諾威王國",
+      "capitalEn": "Hanover",
+      "capitalZh": "漢諾威",
+      "ruler": "George V",
+      "notes": "1866 年與奧地利同盟，蘭根薩爾察戰役後投降，遭普魯士兼併，國王格奧爾格五世流亡。漢諾威成為普魯士省，1871 年隨普魯士加入德意志帝國。"
+    },
+    "wuerttemberg": {
+      "zh": "符騰堡",
+      "formalEn": "Kingdom of Württemberg",
+      "formalZh": "符騰堡王國",
+      "capitalEn": "Stuttgart",
+      "capitalZh": "斯圖加特",
+      "ruler": "William I",
+      "notes": "南德王國，1866 年與奧地利同盟，戰敗後與普魯士簽攻守同盟；1871 年加入德意志帝國，保留王位與部分自治權，工業與自由主義傳統較強。"
+    },
+    "baden": {
+      "zh": "巴登",
+      "formalEn": "Grand Duchy of Baden",
+      "formalZh": "巴登大公國",
+      "capitalEn": "Karlsruhe",
+      "capitalZh": "卡爾斯魯厄",
+      "ruler": "Frederick I",
+      "notes": "西南德大公國，1866 年保持中立，戰後與普魯士簽攻守同盟；1871 年加入德意志帝國，成帝國一邦。地處普法邊界，1870 年為普軍進軍通道。"
+    },
+    "hesse_kassel": {
+      "zh": "黑森選侯國",
+      "formalEn": "Electorate of Hesse",
+      "formalZh": "黑森選侯國",
+      "capitalEn": "Kassel",
+      "capitalZh": "卡塞爾",
+      "ruler": "Frederick William I",
+      "notes": "黑森選侯國，1866 年支持奧地利，戰後被普魯士兼併，併入普魯士的黑森-拿騷省；選侯腓特烈·威廉流亡。1871 年後為德意志帝國境內普魯士的一部分。"
+    },
+    "hesse_darmstadt": {
+      "zh": "黑森大公國",
+      "formalEn": "Grand Duchy of Hesse",
+      "formalZh": "黑森-達姆施塔特大公國",
+      "capitalEn": "Darmstadt",
+      "capitalZh": "達姆施塔特",
+      "ruler": "Louis III",
+      "notes": "黑森-達姆施塔特大公國，1866 年加入北德意志邦聯（僅北部），南部領土 1871 年加入德意志帝國；領土完整保留，大公家族延續至 1918 年。"
+    },
+    "nassau": {
+      "zh": "拿騷",
+      "formalEn": "Duchy of Nassau",
+      "formalZh": "拿騷公國",
+      "capitalEn": "Wiesbaden",
+      "capitalZh": "威斯巴登",
+      "ruler": "Adolphe",
+      "notes": "拿騷公國，1866 年與奧地利同盟，戰後被普魯士兼併，併入黑森-拿騷省；公爵阿道夫流亡，後於 1890 年成為盧森堡大公。1871 年後屬德意志帝國。"
+    },
+    "brunswick": {
+      "zh": "不倫瑞克",
+      "formalEn": "Duchy of Brunswick",
+      "formalZh": "不倫瑞克公國",
+      "capitalEn": "Braunschweig",
+      "capitalZh": "布藍茲維克",
+      "ruler": "William",
+      "notes": "不倫瑞克公國，北德小邦，1866 年加入北德意志邦聯；1871 年成為德意志帝國一邦，因王室繼承爭議，1884 年後由普魯士攝政。"
+    },
+    "mecklenburg": {
+      "zh": "梅克倫堡",
+      "formalEn": "Grand Duchy of Mecklenburg-Schwerin",
+      "formalZh": "梅克倫堡-施威林大公國",
+      "capitalEn": "Schwerin",
+      "capitalZh": "施威林",
+      "ruler": "Frederick Francis II",
+      "notes": "梅克倫堡-施威林大公國，北德農業邦，1866 年加入北德意志邦聯；1871 年成為德意志帝國一邦，保留大公與保守的莊園貴族體制。"
+    },
+    "oldenburg": {
+      "zh": "奧爾登堡",
+      "formalEn": "Grand Duchy of Oldenburg",
+      "formalZh": "歐登堡大公國",
+      "capitalEn": "Oldenburg",
+      "capitalZh": "歐登堡",
+      "ruler": "Peter II",
+      "notes": "歐登堡大公國，北德邦國，1866 年加入北德意志邦聯；1871 年成為德意志帝國一邦，位於北海沿岸，以農業與港口貿易為主。"
+    },
+    "anhalt": {
+      "zh": "安哈特",
+      "formalEn": "Duchy of Anhalt",
+      "formalZh": "安哈特公國",
+      "capitalEn": "Dessau",
+      "capitalZh": "德紹",
+      "ruler": "Leopold IV",
+      "notes": "安哈特公國，北德小邦，1866 年加入北德意志邦聯；1871 年成為德意志帝國一邦，由德紹的亞斯卡尼亞家族統治，1863 年三支合併為單一公國。"
+    },
+    "thuringia": {
+      "zh": "圖林根諸邦",
+      "formalEn": "Thuringian States",
+      "formalZh": "圖林根諸邦",
+      "capitalEn": "Weimar",
+      "capitalZh": "威瑪",
+      "ruler": "Charles Alexander of Saxe-Weimar-Eisenach",
+      "notes": "圖林根諸邦（薩克森-威瑪、薩克森-邁寧根、薩克森-科堡-哥達等），1866 年後陸續加入北德意志邦聯；1871 年各邦成為德意志帝國成員，1920 年才合併為圖林根。"
+    },
+    "lippe": {
+      "zh": "利珀／瓦爾德克",
+      "formalEn": "Principality of Lippe",
+      "formalZh": "利珀親王國",
+      "capitalEn": "Detmold",
+      "capitalZh": "代特莫爾德",
+      "ruler": "Leopold III",
+      "notes": "利珀親王國，北德小邦，1866 年加入北德意志邦聯；1871 年成為德意志帝國一邦，首府代特莫爾德，以農業與小工業為主。"
+    },
+    "hanse": {
+      "zh": "漢薩自由市",
+      "formalEn": "Free and Hanseatic Cities",
+      "formalZh": "漢薩自由市（漢堡、不來梅、呂貝克）",
+      "capitalEn": "Hamburg",
+      "capitalZh": "漢堡",
+      "ruler": "Senates of Hamburg, Bremen and Lübeck",
+      "notes": "漢堡、不來梅與呂貝克三個自由市，1866 年後加入北德意志邦聯；1871 年成為德意志帝國的自由市，漢堡為重要港口與貿易中心，呂貝克 1937 年才失去獨立。"
+    },
+    "holstein": {
+      "zh": "霍爾斯坦",
+      "formalEn": "Duchy of Holstein",
+      "formalZh": "霍爾斯坦公國",
+      "capitalEn": "Kiel",
+      "capitalZh": "基爾",
+      "ruler": "Frederick VII (King of Denmark)",
+      "notes": "霍爾斯坦公國，1864 年維也納條約後由普奧共管，1865 年加斯坦專約歸奧地利管理；1866 年普奧戰爭後歸普魯士，1867 年併入什勒斯維希-霍爾斯坦省。"
+    },
+    "schleswig": {
+      "zh": "什勒斯維希",
+      "formalEn": "Duchy of Schleswig",
+      "formalZh": "什勒斯維希公國",
+      "capitalEn": "Schleswig",
+      "capitalZh": "什勒斯維希",
+      "ruler": "Frederick VII (King of Denmark)",
+      "notes": "什勒斯維希公國，1864 年丹麥放棄，由普奧共管；1865 年歸普魯士管理，1866 年正式併入普魯士，1867 年設什勒斯維希-霍爾斯坦省。"
+    },
+    "luxembourg": {
+      "zh": "盧森堡",
+      "formalEn": "Grand Duchy of Luxembourg",
+      "formalZh": "盧森堡大公國",
+      "capitalEn": "Luxembourg",
+      "capitalZh": "盧森堡市",
+      "ruler": "William III (King of the Netherlands)",
+      "notes": "盧森堡大公國，1867 年倫敦條約中立化，普魯士撤軍、要塞拆除，列強集體保證中立；仍與荷蘭共戴一君至 1890 年，領土未變。"
+    },
+    "tuscany": {
+      "zh": "托斯卡尼",
+      "formalEn": "Grand Duchy of Tuscany",
+      "formalZh": "托斯卡尼大公國",
+      "capitalEn": "Florence",
+      "capitalZh": "佛羅倫斯",
+      "ruler": "Leopold II",
+      "notes": "托斯卡尼大公國，哈布斯堡-洛林王朝統治。1859 年革命後大公出逃，1860 年 3 月公投併入薩丁尼亞，1861 年起屬義大利王國，佛羅倫斯曾為王國首都。"
+    },
+    "modena": {
+      "zh": "摩德納",
+      "formalEn": "Duchy of Modena and Reggio",
+      "formalZh": "摩德納公國",
+      "capitalEn": "Modena",
+      "capitalZh": "摩德納",
+      "ruler": "Francis V",
+      "notes": "摩德納公國，埃斯特王朝統治。1859 年革命後公爵法蘭西斯五世出逃，1860 年 3 月公投併入薩丁尼亞，1861 年起屬義大利王國。"
+    },
+    "parma": {
+      "zh": "帕爾馬",
+      "formalEn": "Duchy of Parma and Piacenza",
+      "formalZh": "帕爾馬公國",
+      "capitalEn": "Parma",
+      "capitalZh": "帕爾馬",
+      "ruler": "Charles III",
+      "notes": "帕爾馬公國，波旁-帕爾馬王朝統治。1859 年革命後公爵出逃，1860 年 3 月公投併入薩丁尼亞，1861 年起屬義大利王國。"
+    },
+    "papal": {
+      "zh": "教宗國",
+      "formalEn": "Papal States",
+      "formalZh": "教皇國",
+      "capitalEn": "Rome",
+      "capitalZh": "羅馬",
+      "ruler": "Pius IX",
+      "notes": "教皇國，庇護九世統治。1859 至 1860 年失去羅馬涅、馬爾凱與翁布里亞，僅餘拉齊奧；1870 年 9 月羅馬被義大利佔領，教皇退居梵蒂岡，世俗權終結。"
+    },
+    "two_sicilies": {
+      "zh": "兩西西里",
+      "formalEn": "Kingdom of the Two Sicilies",
+      "formalZh": "兩西西里王國",
+      "capitalEn": "Naples",
+      "capitalZh": "那不勒斯",
+      "ruler": "Ferdinand II",
+      "notes": "兩西西里王國，波旁王朝統治，首府那不勒斯。1860 年加里波底遠征推翻政權，公投後併入薩丁尼亞；1861 年加埃塔陷落，王國滅亡。"
+    },
+    "greece": {
+      "zh": "希臘",
+      "formalEn": "Kingdom of Greece",
+      "formalZh": "希臘王國",
+      "capitalEn": "Athens",
+      "capitalZh": "雅典",
+      "ruler": "Otto",
+      "notes": "希臘王國，巴伐利亞王朝的奧圖國王於 1862 年被廢，1863 年由丹麥的喬治一世即位；1864 年英國割讓愛奧尼亞群島，民族主義與大希臘主義高漲。"
+    },
+    "serbia": {
+      "zh": "塞爾維亞",
+      "formalEn": "Principality of Serbia",
+      "formalZh": "塞爾維亞公國",
+      "capitalEn": "Belgrade",
+      "capitalZh": "貝爾格勒",
+      "ruler": "Alexander Karađorđević",
+      "notes": "塞爾維亞公國，1856 年巴黎條約確認其自治，鄂圖曼保留宗主權；1867 年鄂圖曼撤軍，1869 年頒憲法。米哈伊洛大公 1860 至 1868 年執政，1878 年獨立。"
+    },
+    "romania": {
+      "zh": "多瑙河公國",
+      "formalEn": "United Principalities of Moldavia and Wallachia",
+      "formalZh": "摩爾達維亞與瓦拉幾亞聯合公國",
+      "capitalEn": "Bucharest",
+      "capitalZh": "布加勒斯特",
+      "ruler": "Alexander John Cuza (from 1859; Moldavia and Wallachia under separate hospodars until then)",
+      "notes": "1859 年摩爾達維亞與瓦拉幾亞合選庫扎為大公，1861 年正式聯合、1862 年稱羅馬尼亞；1866 年庫扎被推翻，霍亨索倫的卡羅爾一世即位，1878 年獨立。"
+    },
+    "montenegro": {
+      "zh": "蒙特內哥羅",
+      "formalEn": "Principality of Montenegro",
+      "formalZh": "蒙特內哥羅公國",
+      "capitalEn": "Cetinje",
+      "capitalZh": "采蒂涅",
+      "ruler": "Danilo I",
+      "notes": "蒙特內哥羅，1852 年由主教轄區改為世俗公國，達尼洛一世統治；與鄂圖曼長期衝突，1878 年柏林會議承認獨立並擴張領土。"
+    },
+    "switzerland": {
+      "zh": "瑞士",
+      "formalEn": "Swiss Confederation",
+      "formalZh": "瑞士聯邦",
+      "capitalEn": "Bern",
+      "capitalZh": "伯恩",
+      "ruler": "Federal Council",
+      "notes": "瑞士聯邦，採聯邦委員會制。1857 年因納沙泰爾問題與普魯士緊張，1860 年薩伏依中立區爭議；1864 年日內瓦公約成立紅十字會，中立地位受列強尊重。"
+    },
+    "belgium": {
+      "zh": "比利時",
+      "formalEn": "Kingdom of Belgium",
+      "formalZh": "比利時王國",
+      "capitalEn": "Brussels",
+      "capitalZh": "布魯塞爾",
+      "ruler": "Leopold I",
+      "notes": "比利時王國，1831 年獨立，1839 年受列強保證中立，利奧波德一世統治。工業化程度高，1860 年代在普法之間維持中立，是英國均勢政策的重要緩衝。"
+    },
+    "netherlands": {
+      "zh": "荷蘭",
+      "formalEn": "Kingdom of the Netherlands",
+      "formalZh": "荷蘭王國",
+      "capitalEn": "The Hague",
+      "capitalZh": "海牙",
+      "ruler": "William III",
+      "notes": "荷蘭王國，威廉三世統治。1867 年盧森堡危機中出售盧森堡的計畫失敗，盧森堡中立化；以殖民貿易與歐陸中立為外交基調。"
+    },
+    "portugal": {
+      "zh": "葡萄牙",
+      "formalEn": "Kingdom of Portugal",
+      "formalZh": "葡萄牙王國",
+      "capitalEn": "Lisbon",
+      "capitalZh": "里斯本",
+      "ruler": "Maria II",
+      "notes": "葡萄牙王國，1853 年瑪麗亞二世去世，佩德羅五世即位（1853–1861），後由路易一世繼位。採君主立憲，在歐洲協調中角色有限，與英國關係密切。"
+    },
+    "germany": {
+      "zh": "德意志帝國",
+      "formalEn": "German Empire",
+      "formalZh": "德意志帝國",
+      "capitalEn": "Berlin",
+      "capitalZh": "柏林",
+      "ruler": "",
+      "notes": "德意志帝國，1871 年 1 月 18 日在凡爾賽宮鏡廳宣告成立，威廉一世為德意志皇帝，俾斯麥任帝國總理。帝國採聯邦制，由 25 個邦與亞爾薩斯-洛林直轄領組成，設聯邦參議院與普選的帝國議會；普魯士以人口與軍事優勢主導聯邦，皇帝掌外交與軍權。1871 年 4 月帝國憲法通過，柏林為首都，德意志成為歐陸最強國家。"
+    },
+    "ngc": {
+      "zh": "北德意志邦聯",
+      "formalEn": "North German Confederation",
+      "formalZh": "北德意志邦聯",
+      "capitalEn": "Berlin",
+      "capitalZh": "柏林",
+      "ruler": "",
+      "notes": "北德意志邦聯，1867 年 2 月選出制憲議會、4 月通過憲法，7 月 1 日生效，普魯士主導，俾斯麥任聯邦總理。成員含 22 邦與漢堡、不來梅、呂貝克 3 個自由市；普魯士國王任聯邦主席，設聯邦參議院與普選的帝國議會。南德諸邦留在邦聯之外，但與普魯士簽秘密攻守同盟。1871 年擴充為德意志帝國，是帝國憲法的藍本。"
+    },
+    "united_netherlands": {
+      "zh": "聯合尼德蘭王國",
+      "formalEn": "United Kingdom of the Netherlands",
+      "formalZh": "聯合尼德蘭王國",
+      "capitalEn": "Brussels and The Hague",
+      "capitalZh": "布魯塞爾與海牙",
+      "ruler": "William I",
+      "notes": "1815 年維也納會議將荷蘭共和國、奧屬尼德蘭與列日合組為聯合尼德蘭王國，盧森堡以大公國身分與荷蘭共主，並加入德意志邦聯。威廉一世推行中央集權與荷語政策，引起南部天主教與法語精英不滿，1830 年布魯塞爾起義後比利時脫離。1839 年倫敦條約確認分離，王國僅餘今荷蘭本土，盧森堡西部歸比利時、東部仍與荷蘭共主至 1890 年。"
+    },
+    "bulgaria": {
+      "zh": "保加利亞",
+      "formalEn": "Principality of Bulgaria → Tsardom of Bulgaria",
+      "formalZh": "保加利亞公國→保加利亞王國",
+      "capitalEn": "Sofia",
+      "capitalZh": "索菲亞",
+      "ruler": "Alexander I; Ferdinand I",
+      "notes": "保加利亞在 1878 年聖斯特凡諾條約中一度獲得大保加利亞疆域，但柏林條約改設自治公國，名義上仍屬鄂圖曼，東魯米利亞則另為自治省。1879 年亞歷山大一世即位，1885 年合併東魯米利亞，1886 年亞歷山大退位，1887 年薩克森-科堡的斐迪南當選大公。1908 年斐迪南宣布獨立並稱沙皇，巴爾幹戰爭後失去馬其頓大部，1915 年加入同盟國。"
+    },
+    "albania": {
+      "zh": "阿爾巴尼亞",
+      "formalEn": "Principality of Albania",
+      "formalZh": "阿爾巴尼亞公國",
+      "capitalEn": "Vlorë; Tirana",
+      "capitalZh": "發羅拉；地拉那",
+      "ruler": "William of Wied",
+      "notes": "阿爾巴尼亞民族運動在 1878 年普里茲倫同盟中萌芽，長期爭取脫離鄂圖曼並阻止領土被鄰國瓜分。1912 年 11 月 28 日伊斯梅爾·捷馬利在發羅拉宣布獨立，1913 年倫敦會議獲列強承認，但邊界劃定使科索沃等地留在塞爾維亞境內。1914 年德國親王威廉·馮·維德即位為公，旋即因大戰與內亂流亡，1920 年地拉那成為首都。"
+    },
+    "norway": {
+      "zh": "挪威",
+      "formalEn": "Kingdom of Norway",
+      "formalZh": "挪威王國",
+      "capitalEn": "Oslo (Kristiania)",
+      "capitalZh": "奧斯陸（克里斯蒂安尼亞）",
+      "ruler": "Haakon VII",
+      "notes": "1814 年挪威脫離丹麥、頒布埃茲沃爾憲法，隨後與瑞典結成共主邦聯，共享國王與外交，內政則高度自主。十九世紀末圍繞領事服務與外交代表權的爭議激化，1905 年 6 月議會宣布解散聯合，8 月公投確認，瑞典經卡爾斯塔德協議承認。同年 11 月哈康七世即位，挪威成為獨立王國，首都克里斯蒂安尼亞於 1925 年正式改名奧斯陸。"
+    },
+    "sweden": {
+      "zh": "瑞典",
+      "formalEn": "Sweden",
+      "formalZh": "瑞典",
+      "capitalEn": "",
+      "capitalZh": "",
+      "ruler": "",
+      "notes": ""
+    }
+  },
+  "frames": {
+    "ngc": {
+      "en": "NORTH GERMAN CONFEDERATION",
+      "zh": "北德意志邦聯"
+    },
+    "germany": {
+      "en": "GERMAN EMPIRE",
+      "zh": "德意志帝國"
+    }
+  },
+  "owners": {
+    "france": [
+      [
+        1815,
+        "france"
+      ]
+    ],
+    "alsace_lorraine": [
+      [
+        1815,
+        "france"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "savoy_nice": [
+      [
+        1815,
+        "sardinia"
+      ],
+      [
+        1860,
+        "france"
+      ]
+    ],
+    "belgium": [
+      [
+        1815,
+        "united_netherlands"
+      ],
+      [
+        1830,
+        "belgium"
+      ]
+    ],
+    "netherlands": [
+      [
+        1815,
+        "united_netherlands"
+      ],
+      [
+        1830,
+        "netherlands"
+      ]
+    ],
+    "luxembourg": [
+      [
+        1815,
+        "united_netherlands"
+      ],
+      [
+        1848,
+        "luxembourg"
+      ]
+    ],
+    "uk": [
+      [
+        1815,
+        "uk"
+      ]
+    ],
+    "spain": [
+      [
+        1815,
+        "spain"
+      ]
+    ],
+    "portugal": [
+      [
+        1815,
+        "portugal"
+      ]
+    ],
+    "switzerland": [
+      [
+        1815,
+        "switzerland"
+      ]
+    ],
+    "prussia": [
+      [
+        1815,
+        "prussia"
+      ]
+    ],
+    "bavaria": [
+      [
+        1815,
+        "bavaria"
+      ]
+    ],
+    "wuerttemberg": [
+      [
+        1815,
+        "wuerttemberg"
+      ]
+    ],
+    "baden": [
+      [
+        1815,
+        "baden"
+      ]
+    ],
+    "saxony": [
+      [
+        1815,
+        "saxony"
+      ]
+    ],
+    "hanover": [
+      [
+        1815,
+        "hanover"
+      ],
+      [
+        1866,
+        "prussia"
+      ]
+    ],
+    "hesse_kassel": [
+      [
+        1815,
+        "hesse_kassel"
+      ],
+      [
+        1866,
+        "prussia"
+      ]
+    ],
+    "hesse_darmstadt": [
+      [
+        1815,
+        "hesse_darmstadt"
+      ]
+    ],
+    "nassau": [
+      [
+        1815,
+        "nassau"
+      ],
+      [
+        1866,
+        "prussia"
+      ]
+    ],
+    "brunswick": [
+      [
+        1815,
+        "brunswick"
+      ]
+    ],
+    "mecklenburg": [
+      [
+        1815,
+        "mecklenburg"
+      ]
+    ],
+    "oldenburg": [
+      [
+        1815,
+        "oldenburg"
+      ]
+    ],
+    "anhalt": [
+      [
+        1815,
+        "anhalt"
+      ]
+    ],
+    "thuringia": [
+      [
+        1815,
+        "thuringia"
+      ]
+    ],
+    "lippe": [
+      [
+        1815,
+        "lippe"
+      ]
+    ],
+    "hanse": [
+      [
+        1815,
+        "hanse"
+      ]
+    ],
+    "holstein": [
+      [
+        1815,
+        "denmark"
+      ],
+      [
+        1864,
+        "austria"
+      ],
+      [
+        1866,
+        "prussia"
+      ]
+    ],
+    "schleswig": [
+      [
+        1815,
+        "denmark"
+      ],
+      [
+        1864,
+        "prussia"
+      ]
+    ],
+    "austria": [
+      [
+        1815,
+        "austria"
+      ],
+      [
+        1867,
+        "austria_hungary"
+      ]
+    ],
+    "lombardy": [
+      [
+        1815,
+        "austria"
+      ],
+      [
+        1859,
+        "sardinia"
+      ],
+      [
+        1861,
+        "italy"
+      ]
+    ],
+    "mantua": [
+      [
+        1815,
+        "austria"
+      ],
+      [
+        1866,
+        "italy"
+      ]
+    ],
+    "venetia": [
+      [
+        1815,
+        "austria"
+      ],
+      [
+        1866,
+        "italy"
+      ]
+    ],
+    "sardinia": [
+      [
+        1815,
+        "sardinia"
+      ],
+      [
+        1861,
+        "italy"
+      ]
+    ],
+    "tuscany": [
+      [
+        1815,
+        "tuscany"
+      ],
+      [
+        1860,
+        "sardinia"
+      ],
+      [
+        1861,
+        "italy"
+      ]
+    ],
+    "modena": [
+      [
+        1815,
+        "modena"
+      ],
+      [
+        1860,
+        "sardinia"
+      ],
+      [
+        1861,
+        "italy"
+      ]
+    ],
+    "parma": [
+      [
+        1815,
+        "parma"
+      ],
+      [
+        1860,
+        "sardinia"
+      ],
+      [
+        1861,
+        "italy"
+      ]
+    ],
+    "papal_romagna": [
+      [
+        1815,
+        "papal"
+      ],
+      [
+        1860,
+        "sardinia"
+      ],
+      [
+        1861,
+        "italy"
+      ]
+    ],
+    "papal_marche_umbria": [
+      [
+        1815,
+        "papal"
+      ],
+      [
+        1860,
+        "italy"
+      ]
+    ],
+    "papal_lazio": [
+      [
+        1815,
+        "papal"
+      ],
+      [
+        1870,
+        "italy"
+      ]
+    ],
+    "two_sicilies": [
+      [
+        1815,
+        "two_sicilies"
+      ],
+      [
+        1860,
+        "italy"
+      ]
+    ],
+    "russia": [
+      [
+        1815,
+        "russia"
+      ]
+    ],
+    "south_bessarabia": [
+      [
+        1815,
+        "russia"
+      ],
+      [
+        1856,
+        "romania"
+      ],
+      [
+        1878,
+        "russia"
+      ]
+    ],
+    "norway": [
+      [
+        1815,
+        "sweden_norway"
+      ],
+      [
+        1905,
+        "norway"
+      ]
+    ],
+    "sweden": [
+      [
+        1815,
+        "sweden_norway"
+      ],
+      [
+        1905,
+        "sweden"
+      ]
+    ],
+    "denmark": [
+      [
+        1815,
+        "denmark"
+      ]
+    ],
+    "greece": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1830,
+        "greece"
+      ]
+    ],
+    "serbia": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1830,
+        "serbia"
+      ]
+    ],
+    "romania": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1853,
+        "romania"
+      ]
+    ],
+    "montenegro": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1878,
+        "montenegro"
+      ]
+    ],
+    "ottoman": [
+      [
+        1815,
+        "ottoman"
+      ]
+    ],
+    "bosnia": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1878,
+        "austria_hungary"
+      ]
+    ],
+    "bulgaria_n": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1878,
+        "bulgaria"
+      ]
+    ],
+    "east_rumelia": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1885,
+        "bulgaria"
+      ]
+    ],
+    "bulgaria_thrace": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1913,
+        "bulgaria"
+      ]
+    ],
+    "albania": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1913,
+        "albania"
+      ]
+    ],
+    "serbia_macedonia": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1913,
+        "serbia"
+      ]
+    ],
+    "romania_dobruja": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1878,
+        "romania"
+      ]
+    ],
+    "greece_thessaly": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1881,
+        "greece"
+      ]
+    ],
+    "greece_1913": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1913,
+        "greece"
+      ]
+    ],
+    "crete": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1913,
+        "greece"
+      ]
+    ],
+    "cyprus": [
+      [
+        1815,
+        "ottoman"
+      ],
+      [
+        1878,
+        "uk"
+      ]
+    ]
+  },
+  "groups": {
+    "prussia": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "saxony": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "mecklenburg": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "oldenburg": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "brunswick": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "anhalt": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "thuringia": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "lippe": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "hanse": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "holstein": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "schleswig": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "hanover": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "hesse_kassel": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "nassau": [
+      [
+        1867,
+        "ngc"
+      ],
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "bavaria": [
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "wuerttemberg": [
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "baden": [
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "hesse_darmstadt": [
+      [
+        1871,
+        "germany"
+      ]
+    ],
+    "alsace_lorraine": [
+      [
+        1871,
+        "germany"
+      ]
+    ]
+  },
+  "seas": [
+    {
+      "en": "ATLANTIC OCEAN",
+      "zh": "大西洋",
+      "lon": -8.5,
+      "lat": 47.0
+    },
+    {
+      "en": "NORTH SEA",
+      "zh": "北海",
+      "lon": 3.2,
+      "lat": 56.0
+    },
+    {
+      "en": "BALTIC SEA",
+      "zh": "波羅的海",
+      "lon": 19.6,
+      "lat": 57.4
+    },
+    {
+      "en": "MEDITERRANEAN SEA",
+      "zh": "地中海",
+      "lon": 17.0,
+      "lat": 35.6
+    },
+    {
+      "en": "ADRIATIC SEA",
+      "zh": "亞得里亞海",
+      "lon": 15.6,
+      "lat": 42.8
+    },
+    {
+      "en": "BLACK SEA",
+      "zh": "黑海",
+      "lon": 34.3,
+      "lat": 43.2
+    },
+    {
+      "en": "AEGEAN SEA",
+      "zh": "愛琴海",
+      "lon": 25.0,
+      "lat": 38.4
+    },
+    {
+      "en": "BAY OF BISCAY",
+      "zh": "比斯開灣",
+      "lon": -6.0,
+      "lat": 45.0
+    }
+  ],
+  "cities": [
+    {
+      "nameEn": "London",
+      "nameZh": "倫敦",
+      "lon": -0.13,
+      "lat": 51.51,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Paris",
+      "nameZh": "巴黎",
+      "lon": 2.35,
+      "lat": 48.86,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Berlin",
+      "nameZh": "柏林",
+      "lon": 13.4,
+      "lat": 52.52,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Vienna",
+      "nameZh": "維也納",
+      "lon": 16.37,
+      "lat": 48.21,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "St. Petersburg",
+      "nameZh": "聖彼得堡",
+      "lon": 30.32,
+      "lat": 59.94,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Constantinople",
+      "nameZh": "伊斯坦堡",
+      "lon": 28.98,
+      "lat": 41.01,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Turin",
+      "nameZh": "杜林",
+      "lon": 7.69,
+      "lat": 45.07,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Florence",
+      "nameZh": "佛羅倫斯",
+      "lon": 11.25,
+      "lat": 43.77,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Rome",
+      "nameZh": "羅馬",
+      "lon": 12.5,
+      "lat": 41.9,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Naples",
+      "nameZh": "那不勒斯",
+      "lon": 14.27,
+      "lat": 40.85,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Milan",
+      "nameZh": "米蘭",
+      "lon": 9.19,
+      "lat": 45.46,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Venice",
+      "nameZh": "威尼斯",
+      "lon": 12.33,
+      "lat": 45.44,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Munich",
+      "nameZh": "慕尼黑",
+      "lon": 11.58,
+      "lat": 48.14,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Dresden",
+      "nameZh": "德勒斯登",
+      "lon": 13.74,
+      "lat": 51.05,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Hanover",
+      "nameZh": "漢諾威",
+      "lon": 9.73,
+      "lat": 52.37,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Hamburg",
+      "nameZh": "漢堡",
+      "lon": 9.99,
+      "lat": 53.55,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Frankfurt",
+      "nameZh": "法蘭克福",
+      "lon": 8.68,
+      "lat": 50.11,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Kassel",
+      "nameZh": "卡塞爾",
+      "lon": 9.49,
+      "lat": 51.31,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Wiesbaden",
+      "nameZh": "威斯巴登",
+      "lon": 8.24,
+      "lat": 50.08,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Stuttgart",
+      "nameZh": "斯圖加特",
+      "lon": 9.18,
+      "lat": 48.78,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Karlsruhe",
+      "nameZh": "卡爾斯魯厄",
+      "lon": 8.4,
+      "lat": 49.01,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Copenhagen",
+      "nameZh": "哥本哈根",
+      "lon": 12.57,
+      "lat": 55.68,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Stockholm",
+      "nameZh": "斯德哥爾摩",
+      "lon": 18.07,
+      "lat": 59.33,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Madrid",
+      "nameZh": "馬德里",
+      "lon": -3.7,
+      "lat": 40.42,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Lisbon",
+      "nameZh": "里斯本",
+      "lon": -9.14,
+      "lat": 38.72,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Brussels",
+      "nameZh": "布魯塞爾",
+      "lon": 4.35,
+      "lat": 50.85,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "The Hague",
+      "nameZh": "海牙",
+      "lon": 4.3,
+      "lat": 52.08,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Bern",
+      "nameZh": "伯恩",
+      "lon": 7.45,
+      "lat": 46.95,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Luxembourg",
+      "nameZh": "盧森堡市",
+      "lon": 6.13,
+      "lat": 49.61,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Belgrade",
+      "nameZh": "貝爾格勒",
+      "lon": 20.46,
+      "lat": 44.82,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Bucharest",
+      "nameZh": "布加勒斯特",
+      "lon": 26.1,
+      "lat": 44.43,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Athens",
+      "nameZh": "雅典",
+      "lon": 23.73,
+      "lat": 37.98,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Cetinje",
+      "nameZh": "采蒂涅",
+      "lon": 18.92,
+      "lat": 42.39,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Nice",
+      "nameZh": "尼斯",
+      "lon": 7.26,
+      "lat": 43.7,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Chambéry",
+      "nameZh": "香貝里",
+      "lon": 5.92,
+      "lat": 45.56,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Kiel",
+      "nameZh": "基爾",
+      "lon": 10.14,
+      "lat": 54.32,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Schleswig",
+      "nameZh": "什勒斯維希",
+      "lon": 9.57,
+      "lat": 54.52,
+      "kind": "city",
+      "year": null
+    },
+    {
+      "nameEn": "Sevastopol",
+      "nameZh": "塞瓦斯托波爾",
+      "lon": 33.52,
+      "lat": 44.62,
+      "kind": "siege",
+      "year": 1854,
+      "side": "Allied victory"
+    },
+    {
+      "nameEn": "Balaklava",
+      "nameZh": "巴拉克拉瓦",
+      "lon": 33.6,
+      "lat": 44.5,
+      "kind": "battle",
+      "year": 1854,
+      "side": "Indecisive"
+    },
+    {
+      "nameEn": "Inkerman",
+      "nameZh": "因克爾曼",
+      "lon": 33.59,
+      "lat": 44.61,
+      "kind": "battle",
+      "year": 1854,
+      "side": "Indecisive"
+    },
+    {
+      "nameEn": "Alma",
+      "nameZh": "阿爾馬河",
+      "lon": 33.98,
+      "lat": 44.84,
+      "kind": "battle",
+      "year": 1854,
+      "side": "Allied victory"
+    },
+    {
+      "nameEn": "Oltenița",
+      "nameZh": "奧爾特尼察",
+      "lon": 26.63,
+      "lat": 44.08,
+      "kind": "battle",
+      "year": 1853,
+      "side": "Russian victory"
+    },
+    {
+      "nameEn": "Silistria",
+      "nameZh": "錫利斯特拉",
+      "lon": 27.26,
+      "lat": 44.11,
+      "kind": "siege",
+      "year": 1854,
+      "side": "Ottoman victory"
+    },
+    {
+      "nameEn": "Magenta",
+      "nameZh": "馬真塔",
+      "lon": 8.88,
+      "lat": 45.46,
+      "kind": "battle",
+      "year": 1859,
+      "side": "Franco-Sardinian victory"
+    },
+    {
+      "nameEn": "Solferino",
+      "nameZh": "索爾費里諾",
+      "lon": 10.57,
+      "lat": 45.37,
+      "kind": "battle",
+      "year": 1859,
+      "side": "Franco-Sardinian victory"
+    },
+    {
+      "nameEn": "Villafranca",
+      "nameZh": "維拉弗蘭卡",
+      "lon": 10.83,
+      "lat": 45.35,
+      "kind": "city",
+      "year": 1859
+    },
+    {
+      "nameEn": "Königgrätz",
+      "nameZh": "柯尼希格雷茨",
+      "lon": 15.75,
+      "lat": 50.21,
+      "kind": "battle",
+      "year": 1866,
+      "side": "Prussian victory"
+    },
+    {
+      "nameEn": "Custozza",
+      "nameZh": "庫斯托扎",
+      "lon": 10.72,
+      "lat": 45.38,
+      "kind": "battle",
+      "year": 1866,
+      "side": "Austrian victory"
+    },
+    {
+      "nameEn": "Lissa",
+      "nameZh": "利薩",
+      "lon": 16.05,
+      "lat": 43.08,
+      "kind": "battle",
+      "year": 1866,
+      "side": "Austrian naval victory"
+    },
+    {
+      "nameEn": "Düppel",
+      "nameZh": "迪伯爾",
+      "lon": 9.48,
+      "lat": 54.91,
+      "kind": "battle",
+      "year": 1864,
+      "side": "Prussian-Austrian victory"
+    },
+    {
+      "nameEn": "Sedan",
+      "nameZh": "色當",
+      "lon": 4.94,
+      "lat": 49.7,
+      "kind": "battle",
+      "year": 1870,
+      "side": "Prussian victory"
+    },
+    {
+      "nameEn": "Metz",
+      "nameZh": "梅斯",
+      "lon": 6.18,
+      "lat": 49.12,
+      "kind": "siege",
+      "year": 1870,
+      "side": "Prussian victory"
+    },
+    {
+      "nameEn": "Gravelotte",
+      "nameZh": "格拉沃洛特",
+      "lon": 6.02,
+      "lat": 49.11,
+      "kind": "battle",
+      "year": 1870,
+      "side": "Prussian victory"
+    },
+    {
+      "nameEn": "Wissembourg",
+      "nameZh": "維桑堡",
+      "lon": 7.94,
+      "lat": 49.04,
+      "kind": "battle",
+      "year": 1870,
+      "side": "German victory"
+    },
+    {
+      "nameEn": "Wörth",
+      "nameZh": "沃爾特",
+      "lon": 7.75,
+      "lat": 48.94,
+      "kind": "battle",
+      "year": 1870,
+      "side": "German victory"
+    },
+    {
+      "nameEn": "Siege of Paris",
+      "nameZh": "巴黎圍城",
+      "lon": 2.34,
+      "lat": 48.85,
+      "kind": "siege",
+      "year": 1870,
+      "side": "German victory"
+    },
+    {
+      "nameEn": "Gaeta",
+      "nameZh": "加埃塔",
+      "lon": 13.57,
+      "lat": 41.21,
+      "kind": "siege",
+      "year": 1861,
+      "side": "Sardinian victory"
+    },
+    {
+      "nameEn": "Palermo",
+      "nameZh": "巴勒莫",
+      "lon": 13.36,
+      "lat": 38.12,
+      "kind": "battle",
+      "year": 1860,
+      "side": "Garibaldian victory"
+    }
+  ],
+  "events": [
+    {
+      "id": "concert_1815",
+      "year": 1815,
+      "dateLabel": "1815–1822",
+      "titleEn": "The Concert of Europe",
+      "titleZh": "歐洲協調制度",
+      "type": "treaty",
+      "summaryZh": "1815 年四國同盟續約、神聖同盟成立，列強約定定期集會協商，形成歐洲協調制度（Concert of Europe）；1818 年亞琛會議讓法國重返大國行列，此後以會議維持均勢與現狀。",
+      "detailZh": "1814 年肖蒙條約結成英、俄、奧、普四國同盟，1815 年 11 月續約時加入第六條，約定定期集會商討共同利益，成為協調制度的法律基礎。同年 9 月俄、奧、普三國君主簽署神聖同盟宣言，以基督教團結為號召，英國雖未加入，仍是四國同盟的一員。1818 年亞琛會議結束對法佔領，法國重返大國行列，四國同盟續存。協調制度透過會議運作：1820 年特羅保、1821 年萊巴赫、1822 年維羅納會議處理義大利與西班牙革命，但英國反對干預，列強出現裂痕。此後協調制度時強時弱，1856 年巴黎和會與 1878 年柏林會議仍是其遺緒：大國以會議決定歐洲秩序，直到 1914 年才徹底破產。",
+      "terms": [
+        "Concert of Europe",
+        "Quadruple Alliance",
+        "Holy Alliance",
+        "Congress of Aix-la-Chapelle"
+      ]
+    },
+    {
+      "id": "vienna_1815",
+      "year": 1815,
+      "dateLabel": "Sep 1814 – Jun 1815",
+      "titleEn": "The Congress of Vienna",
+      "titleZh": "維也納會議",
+      "type": "treaty",
+      "summaryZh": "1814 年 9 月起列強在維也納集會，1815 年 6 月 9 日簽署最後議定書。會議以正統原則與勢力均衡重建歐洲：成立德意志邦聯，波蘭王國與芬蘭歸俄國，挪威併入瑞典，比利時併入荷蘭，義大利各邦復辟，瑞士永久中立。",
+      "detailZh": "維也納會議由奧地利首相梅特涅主持，英國卡斯爾雷、俄國亞歷山大一世、普魯士與法國塔列朗共同參與。會議以正統原則恢復被拿破崙推翻的王朝，以勢力均衡與領土補償約束法國，並確立由大國協商決定歐洲秩序的作法。主要安排包括：俄國取得波蘭王國（會議波蘭）與芬蘭，挪威由丹麥割予瑞典，比利時與荷蘭合組聯合尼德蘭王國，奧地利取回倫巴底與威尼托，薩丁尼亞收回熱那亞，義大利各邦舊王朝復辟；德意志成立三十九邦的邦聯，由法蘭克福的邦聯議會主持；瑞士確立永久中立。1815 年 6 月 9 日各國簽署最後議定書，成為此後四十年的條約基礎，但其忽略民族主義與自由主義，也埋下 1830 與 1848 年革命的伏筆。",
+      "terms": [
+        "Final Act of Vienna",
+        "legitimacy",
+        "balance of power",
+        "German Confederation",
+        "Swiss neutrality"
+      ]
+    },
+    {
+      "id": "belgium_1830",
+      "year": 1830,
+      "dateLabel": "1830–1839",
+      "titleEn": "Belgian and Greek Independence",
+      "titleZh": "比利時與希臘獨立",
+      "type": "revolt",
+      "summaryZh": "1830 年布魯塞爾起義，比利時脫離荷蘭獨立；1831 年列強簽署倫敦條約確立其永久中立，1839 年荷蘭終於承認。同年希臘獨立獲列強承認，1832 年倫敦會議確立希臘王國，擺脫鄂圖曼統治。兩者顯示民族運動已能突破維也納體系。",
+      "detailZh": "1830 年法國七月革命鼓舞歐洲自由派；8 月 25 日布魯塞爾因歌劇演出爆發騷動，群眾起事，10 月 4 日比利時宣布獨立，國民議會起草憲法並選舉國王。列強不願開戰，11 月起在倫敦集會；1831 年議定比利時永久中立、由五強集體保證，比利時則割讓林堡與盧森堡部分地區。荷蘭國王威廉一世不承認，1831 年 8 月發動「十日戰役」入侵，法國出兵干預，1832 年法軍圍攻安特衛普要塞迫使荷軍撤退。1839 年 4 月 19 日倫敦條約，荷蘭正式承認比利時，比利時的中立與盧森堡地位至此底定。希臘方面，1821 年起義後經納瓦里諾海戰與 1829 年亞德里亞諾堡條約，1830 年倫敦議定書承認其獨立，1832 年倫敦會議改立巴伐利亞的奧托為國王。比利時與希臘的獨立顯示，只要列強利益一致，維也納會議的領土安排可以被和平改寫。",
+      "terms": [
+        "Belgian Revolution",
+        "Treaty of London 1831",
+        "perpetual neutrality",
+        "London Conference 1832",
+        "Treaty of Adrianople"
+      ]
+    },
+    {
+      "id": "revolutions_1848",
+      "year": 1848,
+      "dateLabel": "Feb 1848 – 1849",
+      "titleEn": "The Revolutions of 1848",
+      "titleZh": "1848 年革命",
+      "type": "revolt",
+      "summaryZh": "1848 年革命自法國二月革命掀起，蔓延至德意志、奧地利與義大利。各邦爆發起義、頒布憲法，法蘭克福議會嘗試建立統一的德意志國家；奧匈境內匈牙利與捷克民族運動興起，梅特涅下台流亡。革命多遭鎮壓，但舊秩序已無法復原。",
+      "detailZh": "1848 年 2 月巴黎爆發革命，路易-菲利普退位，法蘭西第二共和國成立，消息迅速傳遍歐洲。3 月 13 日維也納群眾起事，梅特涅辭職流亡；3 月 18 日柏林爆發巷戰，普魯士國王允諾立憲。5 月法蘭克福國民議會在保羅教堂召開，試圖以自由主義方式統一德意志，1849 年 3 月通過帝國憲法並向普魯士國王腓特烈·威廉四世獻上皇冠，遭其拒絕。奧匈境內，匈牙利在科蘇特領導下通過四月法令並於 1849 年宣布獨立，捷克則於 6 月在布拉格召開斯拉夫代表大會；義大利米蘭爆發「五日」起義，薩丁尼亞對奧開戰卻在諾瓦拉戰敗。奧地利與俄國聯手鎮壓，匈牙利革命於 1849 年 8 月覆滅。革命雖失敗，梅特涅體系與神聖同盟的正統原則已破產，民族主義成為此後數十年改寫地圖的主要力量。",
+      "terms": [
+        "February Revolution",
+        "Frankfurt Parliament",
+        "March Days",
+        "Magyar Revolution",
+        "Metternich"
+      ]
+    },
+    {
+      "id": "crimean_war",
+      "year": 1853,
+      "dateLabel": "1853–1856",
+      "titleEn": "The Crimean War",
+      "titleZh": "克里米亞戰爭",
+      "type": "war",
+      "summaryZh": "俄國以保護鄂圖曼東正教徒為名，1853 年佔領多瑙河公國；鄂圖曼宣戰，錫諾普海戰後英法參戰。聯軍登陸克里米亞、圍攻塞瓦斯托波爾。1856 年巴黎和約結束戰爭，俄國戰敗，黑海中立化。",
+      "detailZh": "克里米亞戰爭源於聖地保護權之爭，以及俄國要求對鄂圖曼境內東正教徒的保護權。1853 年緬什科夫使團施壓失敗，俄軍佔領摩爾達維亞與瓦拉幾亞；鄂圖曼在英法支持下宣戰。1853 年 11 月，納希莫夫率俄國黑海艦隊在錫諾普殲滅鄂圖曼分艦隊，英法遂於 1854 年 3 月對俄宣戰。奧地利雖未參戰，卻於 8 月進駐多瑙河公國，迫使俄軍撤退。戰事轉向克里米亞：聯軍登陸後在阿爾馬河取勝，開始圍攻塞瓦斯托波爾；巴拉克拉瓦與因克爾曼戰役暴露聯軍補給與指揮問題，南丁格爾的護理改革亦在此時展開。1855 年 9 月要塞陷落，俄國接受和談。此戰打破 1815 年以來大國以會議解決爭端的慣例，卻也讓協調制度在巴黎和會上曇花一現。",
+      "terms": [
+        "Menshikov mission",
+        "Battle of Sinope",
+        "Danubian Principalities",
+        "Eastern Question"
+      ],
+      "eraLabel": "Crimean War begins"
+    },
+    {
+      "id": "eastern_question",
+      "year": 1853,
+      "dateLabel": "1774–1914",
+      "titleEn": "The Eastern Question",
+      "titleZh": "東方問題",
+      "type": "crisis",
+      "summaryZh": "東方問題是十九世紀列強圍繞鄂圖曼帝國衰落的長期角力：俄國要求保護東正教徒並爭取海峽通行權，英法憂心俄國擴張、力保鄂圖曼，聖地保護權之爭最終引爆 1853 年克里米亞戰爭。",
+      "detailZh": "鄂圖曼帝國自十八世紀末屢敗於俄國，1774 年庫楚克-開納吉條約讓俄國取得黑海北岸並自稱東正教徒保護者，東方問題由此成形。1830 年代埃及總督穆罕默德·阿里叛離，俄國以 1833 年溫凱爾-伊斯克萊西條約取得海峽通行優勢，列強遂於 1841 年簽訂倫敦海峽公約，規定平時海峽對各國軍艦關閉。1850 年代聖地保護權之爭再起：法國支持天主教會，俄國支持東正教會，尼古拉一世要求對鄂圖曼境內東正教徒的保護權，1853 年派緬什科夫使團施壓並佔領多瑙河公國。英法為阻止俄國獨占而參戰，克里米亞戰爭爆發。此後柏林會議、波士尼亞危機與巴爾幹戰爭都是東方問題的續篇，直到 1914 年鄂圖曼參戰、帝國瓦解才告一段落。",
+      "terms": [
+        "Eastern Question",
+        "Straits Convention",
+        "Holy Places",
+        "Treaty of Küçük Kaynarca"
+      ]
+    },
+    {
+      "id": "oltenitza_silistria",
+      "year": 1854,
+      "dateLabel": "1853–1855",
+      "titleEn": "The Danube Front and Sevastopol",
+      "titleZh": "多瑙河戰線與塞瓦斯托波爾圍城",
+      "type": "war",
+      "summaryZh": "俄軍與鄂圖曼在奧爾特尼察、錫利斯特拉一帶激戰，俄軍圍攻錫利斯特拉未克；1854 年英法參戰、奧地利進駐多瑙河公國，俄軍撤退。聯軍轉攻克里米亞，經阿爾馬河、巴拉克拉瓦、因克爾曼諸役，1855 年 9 月塞瓦斯托波爾陷落。",
+      "detailZh": "1853 年 11 月，鄂圖曼軍在奧爾特尼察渡河遭俄軍擊退；1854 年俄軍圍攻錫利斯特拉，久攻不下，加上奧地利 6 月與鄂圖曼簽約、8 月進駐公國，俄軍於 8 月撤出多瑙河兩公國。英法聯軍 3 月宣戰後登陸瓦爾納，9 月在克里米亞登陸，9 月 20 日阿爾馬河一戰擊敗緬什科夫；10 月 17 日起圍攻塞瓦斯托波爾。10 月 25 日巴拉克拉瓦之役中輕騎兵衝鋒（Charge of the Light Brigade）成為戰爭的象徵，11 月 5 日因克爾曼血戰後戰線僵持。1855 年聯軍攻佔馬梅隆與馬拉霍夫要塞，9 月 9 日塞瓦斯托波爾陷落，俄軍鑿沉艦隊撤退。此役顯示協調制度已無法約束大國，戰爭成為解決東方問題的手段。",
+      "terms": [
+        "Battle of Oltenița",
+        "Siege of Silistria",
+        "Battle of Balaklava",
+        "Siege of Sevastopol"
+      ],
+      "eraLabel": "Sevastopol besieged"
+    },
+    {
+      "id": "bessarabia_1856",
+      "year": 1856,
+      "dateLabel": "Mar 1856",
+      "titleEn": "Southern Bessarabia",
+      "titleZh": "南比薩拉比亞的割讓",
+      "type": "treaty",
+      "summaryZh": "巴黎條約將南比薩拉比亞（含博爾格拉德與多瑙河口北岸）割予摩爾達維亞，俄國失去多瑙河下游出海口與戰略前沿。此舉旨在削弱俄國對巴爾幹的壓力，以摩爾達維亞為緩衝；1878 年柏林會議才將此地歸還俄國。",
+      "detailZh": "南比薩拉比亞指多瑙河與普魯特河之間、原屬鄂圖曼的沿海地帶，1812 年被俄國併吞。克里米亞戰爭後，巴黎條約第 20、21 條規定俄國將該地（含博爾格拉德、卡胡爾、伊斯梅爾一帶）割予摩爾達維亞，俄國邊界北移至普魯特河。俄國因此失去多瑙河口與多瑙河艦隊基地，奧地利則取得在公國駐軍與影響的空間。對摩爾達維亞而言，這片土地增加其人口與出海口，卻也讓公國更直接暴露於大國競逐。條約同時規定多瑙河自由航行與國際委員會，確保商船通行。1878 年柏林會議後，俄國重新取得南比薩拉比亞，羅馬尼亞則換得北多布羅加，巴爾幹的領土補償邏輯延續下去。",
+      "terms": [
+        "Southern Bessarabia",
+        "Bolgrad",
+        "Danube Delta",
+        "Treaty of Paris"
+      ],
+      "eraLabel": "Southern Bessarabia ceded"
+    },
+    {
+      "id": "danubian_1856",
+      "year": 1856,
+      "dateLabel": "1856–1859",
+      "titleEn": "The Danubian Principalities",
+      "titleZh": "多瑙河公國與塞爾維亞",
+      "type": "treaty",
+      "summaryZh": "巴黎條約確立多瑙河公國（摩爾達維亞、瓦拉幾亞）的自治，由簽約國集體保證，並確認塞爾維亞自治。1858 年巴黎會議協調兩公國地位，1859 年庫扎當選兩公國大公，為羅馬尼亞統一鋪路。",
+      "detailZh": "巴黎條約第 22 至 28 條規定：摩爾達維亞與瓦拉幾亞在鄂圖曼宗主權下享有自治，其特權與豁免由簽約國集體保證；塞爾維亞的自治同樣受集體保證，鄂圖曼僅保留駐軍與宗主權象徵。1858 年列強在巴黎集會，試圖安排兩公國未來，決議以聯合公國名義選舉大公，但附帶限制。1859 年 1 月摩爾達維亞議會選出庫扎（Alexandru Ioan Cuza），2 月瓦拉幾亞議會跟進，兩公國形成共主邦聯，列強被迫默認。這一系列安排把巴爾幹問題國際化，也讓集體保證成為常態；但保證國之間的利益分歧，使公國得以在夾縫中推進統一，羅馬尼亞於 1861 年正式聯合。",
+      "terms": [
+        "collective guarantee",
+        "United Principalities",
+        "Alexandru Ioan Cuza",
+        "Convention of Paris 1858"
+      ],
+      "eraLabel": "Danubian principalities"
+    },
+    {
+      "id": "paris_1856",
+      "year": 1856,
+      "dateLabel": "Feb–Mar 1856",
+      "titleEn": "The Treaty of Paris",
+      "titleZh": "巴黎條約",
+      "type": "treaty",
+      "summaryZh": "1856 年 2 至 3 月巴黎和會召開，3 月 30 日簽訂巴黎條約：黑海中立化、俄國放棄對多瑙河公國與塞爾維亞的保護權、南比薩拉比亞歸摩爾達維亞、多瑙河自由航行。鄂圖曼領土完整受保證並納入歐洲公法，協調制度達到高峰。",
+      "detailZh": "巴黎和會由英法主導，奧地利、普魯士、俄國、鄂圖曼與薩丁尼亞參與，是 1815 年維也納會議以來最具代表性的國際會議。條約要點：黑海中立化，各國不得在黑海設海軍艦隊與軍港；俄國放棄對摩爾達維亞、瓦拉幾亞與塞爾維亞的單獨保護權，改由簽約國集體保證；南比薩拉比亞（含博爾格拉德）割予摩爾達維亞；多瑙河國際化並設歐洲多瑙河委員會；鄂圖曼帝國的獨立與領土完整納入歐洲公法，蘇丹被接納為歐洲協調的一員。會議同時發表宣言，廢除私掠船並規範海戰。然而黑海條款缺乏武力保證，只是大國暫時妥協的產物；法國主張召開會議的原則，也讓以會議處理爭端在形式上延續，實質上大國已各自追逐利益。",
+      "terms": [
+        "Treaty of Paris",
+        "Black Sea neutralization",
+        "Danubian Commission",
+        "Concert of Europe"
+      ],
+      "eraLabel": "Treaty of Paris"
+    },
+    {
+      "id": "italian_war_1859",
+      "year": 1859,
+      "dateLabel": "Apr–Jul 1859",
+      "titleEn": "The Second Italian War of Independence",
+      "titleZh": "第二次義大利獨立戰爭",
+      "type": "war",
+      "summaryZh": "1859 年薩丁尼亞與法國聯手對奧地利開戰。法軍在馬真塔與索爾費里諾擊敗奧軍，但傷亡慘重；拿破崙三世在維拉弗蘭卡片面停戰。戰爭使奧地利失去倫巴底，義大利中部諸邦爆發革命，統一運動全面展開。",
+      "detailZh": "1858 年 7 月，加富爾與拿破崙三世在普隆比耶爾密會，約定法國出兵助薩丁尼亞抗奧，薩丁尼亞以薩伏依與尼斯回報。1859 年 4 月奧地利發出最後通牒並進攻皮埃蒙特，法國參戰。6 月 4 日馬真塔之役，法軍在麥克馬洪指揮下險勝；6 月 24 日索爾費里諾之役雙方投入約三十萬人，奧軍敗退，但法軍傷亡逾萬。拿破崙三世震於戰爭殘酷與普魯士可能介入，7 月 11 日與法蘭茲·約瑟夫在維拉弗蘭卡單獨停戰，未與薩丁尼亞商量。此戰未經歐洲協調制度授權，奧地利被逐出義大利大部；法國以民族原則為名參戰，卻也顯示大國可為自身利益任意改寫 1815 年秩序。",
+      "terms": [
+        "Plombières agreement",
+        "Battle of Magenta",
+        "Battle of Solferino",
+        "Armistice of Villafranca"
+      ],
+      "eraLabel": "Italian war of 1859"
+    },
+    {
+      "id": "villafranca_zurich_1859",
+      "year": 1859,
+      "dateLabel": "Jul–Nov 1859",
+      "titleEn": "Villafranca and Zurich",
+      "titleZh": "維拉弗蘭卡停戰與蘇黎世條約",
+      "type": "treaty",
+      "summaryZh": "維拉弗蘭卡停戰協議與蘇黎世條約規定：倫巴底（曼圖亞、佩斯基耶拉除外）歸薩丁尼亞，威尼托仍屬奧地利；中義大利諸邦問題懸而未決。奧地利保留四角要塞，薩丁尼亞未獲威尼托，加富爾辭職抗議。",
+      "detailZh": "1859 年 7 月 11 日，拿破崙三世與法蘭茲·約瑟夫在維拉弗蘭卡會面，約定奧地利割倫巴底予法國、再由法國轉交薩丁尼亞，但保留曼圖亞與佩斯基耶拉；威尼托仍屬奧地利；中義大利諸邦恢復原狀。11 月 10 日蘇黎世條約確認上述安排，薩丁尼亞正式取得倫巴底（曼圖亞除外）。加富爾因未取得威尼托且未處理中義大利而辭職，但托斯卡尼、摩德納、帕爾馬與羅馬涅的革命政府拒絕復辟，並在 1860 年 3 月以公投併入薩丁尼亞。維拉弗蘭卡顯示大國可繞過小國與民族意願私下決定領土；蘇黎世條約則把戰爭結果條約化，卻無力恢復舊王朝，協調制度的正統原則已名存實亡。",
+      "terms": [
+        "Armistice of Villafranca",
+        "Treaty of Zurich",
+        "Quadrilateral fortresses",
+        "Lombardy"
+      ],
+      "eraLabel": "Lombardy to Sardinia"
+    },
+    {
+      "id": "central_italy_1860",
+      "year": 1860,
+      "dateLabel": "Mar 1860",
+      "titleEn": "Central Italy Joins Sardinia",
+      "titleZh": "中義大利併入薩丁尼亞",
+      "type": "unification",
+      "summaryZh": "1859 年戰爭後，托斯卡尼、摩德納、帕爾馬與羅馬涅的革命政府拒絕舊王朝復辟；1860 年 3 月舉行公投，壓倒性多數贊成併入薩丁尼亞。薩丁尼亞於 3 月 18 日宣布兼併，義大利中部統一完成，法國默許。",
+      "detailZh": "1859 年 4 至 6 月，托斯卡尼、摩德納、帕爾馬與教皇領的羅馬涅先後爆發革命，舊統治者出逃，成立臨時政府。維拉弗蘭卡協議名義上要求恢復原狀，但奧地利無力執行，英國亦支持民族意願。1860 年 3 月 11 至 12 日，四地舉行公投，絕大多數選民贊成併入薩丁尼亞；3 月 18 日薩丁尼亞國王維克多·艾曼紐二世頒布兼併令。拿破崙三世以薩伏依與尼斯為交換條件默許此事，但要求教皇保留羅馬。此後義大利半島僅剩威尼托、羅馬與兩西西里未入王國。以公投決定領土歸屬，直接挑戰維也納會議的正統原則，也讓民族自決成為改寫地圖的新依據。",
+      "terms": [
+        "plebiscite",
+        "Romagna",
+        "provisional governments",
+        "annexation"
+      ],
+      "eraLabel": "Central Italy annexed"
+    },
+    {
+      "id": "garibaldi_1860",
+      "year": 1860,
+      "dateLabel": "May–Nov 1860",
+      "titleEn": "Garibaldi's Expedition of the Thousand",
+      "titleZh": "加里波底千人遠征",
+      "type": "unification",
+      "summaryZh": "1860 年 5 月加里波底率千人遠征西西里，協助當地起義，連勝後渡海攻入那不勒斯。10 月在提亞諾與維克多·艾曼紐二世會面，將征服地獻給薩丁尼亞；公投後併入，兩西西里王國滅亡。",
+      "detailZh": "1860 年 4 月西西里爆發起義，加里波底召集約一千名志願者，5 月 11 日登陸馬爾薩拉，5 月 15 日在卡拉塔菲米擊敗波旁軍，5 月底進入巴勒莫。8 月渡過海峽登陸卡拉布里亞，9 月 7 日進入那不勒斯，國王法蘭西斯二世退守加埃塔。10 月 1 日沃爾圖諾河之役穩住局勢，10 月 26 日加里波底在提亞諾與維克多·艾曼紐二世會面，交出政權。10 月 21 日公投將兩西西里併入薩丁尼亞，1861 年 2 月加埃塔投降。加里波底未進攻羅馬，避免與法國衝突。這場由下而上的民族運動顯示，王朝外交已無法壟斷義大利統一進程。",
+      "terms": [
+        "Expedition of the Thousand",
+        "Marsala",
+        "Teano",
+        "Volturno"
+      ],
+      "eraLabel": "Garibaldi's Thousand"
+    },
+    {
+      "id": "savoy_nice_1860",
+      "year": 1860,
+      "dateLabel": "Mar–Apr 1860",
+      "titleEn": "The Treaty of Turin",
+      "titleZh": "都靈條約",
+      "type": "treaty",
+      "summaryZh": "1860 年 3 月 24 日都靈條約：薩丁尼亞將薩伏依與尼斯割予法國，作為法國同意其兼併中義大利的交換。4 月兩地公投確認歸屬，尼斯出生的加里波底強烈抗議。此交易使法國邊界推進至阿爾卑斯山。",
+      "detailZh": "都靈條約由加富爾與法國代表簽署：薩丁尼亞割讓薩伏依與尼斯，法國則承認薩丁尼亞對中義大利的兼併。條約延續 1858 年普隆比耶爾密約的補償邏輯，但名義上以人民的意願包裝，4 月 15 至 16 日的公投在法軍與薩丁尼亞官員監督下舉行，結果一面倒贊成歸法，遭到共和派與加里波底抨擊。尼斯是加里波底的故鄉，他終身拒絕承認割讓。條約另規定薩伏依北部（沙布萊、福西尼一帶）為中立區，瑞士對法國兼併薩伏依表示不滿。此案顯示大國以領土補償換取外交支持，是 1860 年代領土變更的典型模式。",
+      "terms": [
+        "Treaty of Turin",
+        "Savoy",
+        "Nice",
+        "plebiscite"
+      ],
+      "eraLabel": "Savoy and Nice to France"
+    },
+    {
+      "id": "italy_1861",
+      "year": 1861,
+      "dateLabel": "Mar 1861",
+      "titleEn": "The Kingdom of Italy",
+      "titleZh": "義大利王國成立",
+      "type": "unification",
+      "summaryZh": "1861 年 3 月 17 日義大利王國成立，維克多·艾曼紐二世為國王，加富爾任首相。王國採薩丁尼亞的憲法與行政體制，但不含威尼托與羅馬；教皇拒絕放棄世俗權力，法國駐軍羅馬，形成羅馬問題。",
+      "detailZh": "1861 年 2 月首屆義大利國會在杜林召開，3 月 17 日宣布義大利王國成立，維克多·艾曼紐二世為義大利國王。加富爾於 6 月病逝，王國由歷史右派主導。領土僅及半島大部：威尼托仍在奧地利手中，羅馬與拉齊奧由教皇統治並受法國駐軍保護。國會宣布羅馬為首都，卻無法收回，1865 年遷都佛羅倫斯作為折衷。教皇庇護九世拒絕承認新王國，並號召天主教徒抵制。義大利統一雖告完成大半，卻留下羅馬問題與外交孤立，只能等待 1866 年與普魯士結盟、1870 年法軍撤離的機會。",
+      "terms": [
+        "Kingdom of Italy",
+        "Roman Question",
+        "Piedmontese annexation",
+        "Cavour"
+      ],
+      "eraLabel": "Kingdom of Italy"
+    },
+    {
+      "id": "poland_1863",
+      "year": 1863,
+      "dateLabel": "Jan 1863 – 1864",
+      "titleEn": "The January Uprising",
+      "titleZh": "波蘭一月起義",
+      "type": "revolt",
+      "summaryZh": "1863 年 1 月波蘭反抗俄國統治的一月起義爆發，俄軍血腥鎮壓。英、法、奧聯合照會要求俄國讓步，普魯士則與俄簽阿爾文斯萊本公約合作。外交調停失敗，起義於 1864 年被鎮壓，波蘭問題退出大國議程。",
+      "detailZh": "1863 年 1 月 22 日，波蘭王國因反抗俄國徵兵令而爆發起義，游擊隊在鄉間活動，俄國總督穆拉維約夫以嚴酷手段鎮壓，大批起義者被處死或流放西伯利亞。2 月 8 日普魯士與俄國簽署阿爾文斯萊本公約，允許普軍越境追捕起義者，雖未經批准，卻暴露俄普合作。英、法、奧三國於 4 至 6 月聯合照會，要求俄國恢復波蘭自治，俄國拒絕，並以民族問題反制。調停失敗後，波蘭問題不再是歐洲協調的議題。此事件顯示：當大國利益一致時，協調制度可運作；當俄普聯手，英法奧的集體干涉毫無效果，協調制度的地緣基礎已鬆動。",
+      "terms": [
+        "January Uprising",
+        "Alvensleben Convention",
+        "Muravyov",
+        "diplomatic intervention"
+      ],
+      "eraLabel": "Polish January Uprising"
+    },
+    {
+      "id": "schleswig_1864",
+      "year": 1864,
+      "dateLabel": "Feb–Oct 1864",
+      "titleEn": "The Second Schleswig War",
+      "titleZh": "第二次什勒斯維希戰爭",
+      "type": "war",
+      "summaryZh": "1863 年丹麥通過十一月憲法兼併什勒斯維希，違反 1852 年倫敦議定書。普奧聯軍 1864 年進攻，迪伯爾要塞陷落；倫敦會議調停失敗。維也納條約使丹麥放棄什勒斯維希、霍爾斯坦與勞恩堡，普奧共管。",
+      "detailZh": "1852 年倫敦議定書確認丹麥國王為什勒斯維希、霍爾斯坦與勞恩堡的君主，並規定什勒斯維希不併入丹麥。1863 年 11 月丹麥議會通過十一月憲法，將什勒斯維希併入丹麥，觸怒德意志邦聯與民族主義輿論。普魯士首相俾斯麥拉攏奧地利共同出兵，1864 年 2 月普奧聯軍越過艾德河，4 月 18 日迪伯爾要塞陷落，6 月佔領阿爾斯島。4 至 6 月的倫敦會議因丹麥拒絕讓步而失敗，英法未出兵干預。10 月 30 日維也納條約：丹麥放棄三公國，普奧共管。這場戰爭使大國保證的領土秩序被公然撕毀，也為普奧衝突埋下伏筆。",
+      "terms": [
+        "November Constitution",
+        "Battle of Dybbøl",
+        "Treaty of Vienna 1864",
+        "London Conference"
+      ],
+      "eraLabel": "Schleswig-Holstein war"
+    },
+    {
+      "id": "gastein_1865",
+      "year": 1865,
+      "dateLabel": "Aug 1865",
+      "titleEn": "The Convention of Gastein",
+      "titleZh": "加斯坦專約",
+      "type": "treaty",
+      "summaryZh": "1865 年 8 月 14 日加斯坦專約：普魯士管理什勒斯維希，奧地利管理霍爾斯坦，勞恩堡由普魯士購得。此安排只是暫時妥協，奧地利在霍爾斯坦的立足點成為 1866 年衝突的導火線。",
+      "detailZh": "維也納條約後，普奧共管什勒斯維希-霍爾斯坦，行政與主權問題屢生摩擦。1865 年 8 月 14 日，俾斯麥與奧地利代表在加斯坦簽署專約：普魯士負責什勒斯維希，奧地利負責霍爾斯坦；奧地利將勞恩堡讓予普魯士，普魯士支付補償金；兩公國仍維持共管名義，霍爾斯坦的軍隊與港灣問題懸而未決。奧地利在霍爾斯坦的行政權，使其在德意志邦聯議會中得以介入北方事務，也讓普魯士有了挑起衝突的藉口。加斯坦安排繞過邦聯議會與公眾，以雙邊密約處置小邦命運，進一步削弱協調制度的公信力；1866 年 6 月，普魯士即以霍爾斯坦問題為由進軍。",
+      "terms": [
+        "Convention of Gastein",
+        "Lauenburg",
+        "condominium",
+        "Holstein"
+      ],
+      "eraLabel": "Gastein Convention"
+    },
+    {
+      "id": "prague_1866",
+      "year": 1866,
+      "dateLabel": "Aug 1866",
+      "titleEn": "The Treaty of Prague",
+      "titleZh": "布拉格條約",
+      "type": "treaty",
+      "summaryZh": "1866 年 8 月 23 日布拉格條約：德意志邦聯解散，普魯士兼併漢諾威、黑森選侯國、拿騷、法蘭克福與什勒斯維希-霍爾斯坦；奧地利退出德意志事務。威尼托經法國轉交義大利，普魯士成為德意志主導力量。",
+      "detailZh": "布拉格條約是普奧戰爭的正式結束。條約規定：德意志邦聯解散；普魯士兼併漢諾威、黑森選侯國、拿騷、法蘭克福自由市以及什勒斯維希-霍爾斯坦；奧地利承認普魯士在北德意志的領導地位，退出德意志事務；奧地利將威尼托割予法國，再由法國轉交義大利；薩克森等邦保留但須加入新的北德意志邦聯；南德諸邦（巴伐利亞、符騰堡、巴登、黑森-達姆施塔特南部）維持獨立，另與普魯士簽訂秘密攻守同盟。普魯士未索取奧地利領土，以免激起報復，俾斯麥的克制使奧地利日後可能親德。此條約徹底改寫 1815 年以來的德意志秩序，協調制度對德意志事務的約束力蕩然無存。",
+      "terms": [
+        "Treaty of Prague",
+        "dissolution of the German Confederation",
+        "annexations",
+        "North German Confederation"
+      ],
+      "eraLabel": "Confederation dissolved"
+    },
+    {
+      "id": "prussian_austrian_war_1866",
+      "year": 1866,
+      "dateLabel": "Jun–Jul 1866",
+      "titleEn": "The Austro-Prussian War",
+      "titleZh": "普奧戰爭",
+      "type": "war",
+      "summaryZh": "1866 年 6 月普奧戰爭爆發，普魯士退出德意志邦聯，進攻漢諾威、薩克森與波希米亞。7 月 3 日柯尼希格雷茨決戰，普軍以鐵路與電報動員優勢大勝；義大利同時在威尼托作戰失利。7 月 26 日簽尼科爾斯堡初步和約。",
+      "detailZh": "普奧戰爭（德意志邦聯戰爭）源於什勒斯維希-霍爾斯坦爭議與德意志領導權之爭。1866 年 6 月 14 日邦聯議會通過動員，普魯士宣布邦聯解體，出兵漢諾威、薩克森與黑森。普軍在蘭根薩爾察與漢諾威軍交戰，漢諾威軍雖獲戰術勝利，仍於 6 月 29 日被圍投降；7 月 3 日於柯尼希格雷茨（薩多瓦）與奧軍決戰：毛奇集中三個軍團，以電報與鐵路完成迅速動員，奧軍統帥貝內德克戰敗，損失慘重。義大利依約在南部進攻，卻在庫斯托扎失利、利薩海戰受挫。7 月 26 日普奧簽尼科爾斯堡初步和約，8 月 23 日布拉格條約。此戰證明普魯士的軍事與工業優勢，而奧地利被排除於德意志之外；歐洲協調制度對德意志內戰幾乎無從介入。",
+      "terms": [
+        "Königgrätz",
+        "Moltke",
+        "Nikolsburg",
+        "Bundestag"
+      ],
+      "eraLabel": "Königgrätz campaign"
+    },
+    {
+      "id": "venetia_1866",
+      "year": 1866,
+      "dateLabel": "Oct–Nov 1866",
+      "titleEn": "Venetia Joins Italy",
+      "titleZh": "威尼托歸義大利",
+      "type": "treaty",
+      "summaryZh": "普奧戰爭後，奧地利依布拉格條約將威尼托割予法國，法國於 1866 年 10 月轉交義大利；11 月公投確認併入義大利王國，威尼托與曼圖亞一併歸義。義大利至此完成半島領土的主體統一。",
+      "detailZh": "1866 年 6 月義大利依與普魯士的同盟參戰，雖在庫斯托扎與利薩受挫，卻因普軍在柯尼希格雷茨大勝而得利。布拉格條約規定奧地利將威尼托割予法國，10 月 3 日奧法簽維也納條約確認，10 月 19 日法國將威尼托移交義大利；10 月 21 至 22 日公投，絕大多數贊成併入義大利王國，11 月正式兼併，曼圖亞與四角要塞亦隨之移交。拿破崙三世以中間人角色換取外交聲望，卻被義大利民族主義者視為多餘的干預。義大利以戰爭外交完成統一的一大步，證明小國可藉大國衝突獲利；而奧地利失去義大利最後據點，轉向巴爾幹與內部改革。",
+      "terms": [
+        "Treaty of Vienna 1866",
+        "plebiscite",
+        "Venetia",
+        "Quadrilateral"
+      ],
+      "eraLabel": "Venetia to Italy"
+    },
+    {
+      "id": "ausgleich_1867",
+      "year": 1867,
+      "dateLabel": "Feb–Jun 1867",
+      "titleEn": "The Austro-Hungarian Compromise",
+      "titleZh": "奧匈折衷方案",
+      "type": "dynastic",
+      "summaryZh": "1867 年奧匈折衷方案：奧地利帝國改組為奧匈二元君主國，匈牙利取得內政自治，法蘭茲·約瑟夫兼匈牙利國王；外交、國防與財政共同。此舉鞏固哈布斯堡統治，卻加深境內斯拉夫民族的不滿。",
+      "detailZh": "1866 年普奧戰爭失敗後，奧地利必須安撫匈牙利以穩定帝國。1867 年 2 月匈牙利議會通過折衷方案，3 月奧地利議會跟進，6 月 8 日法蘭茲·約瑟夫在布達佩斯加冕為匈牙利國王。奧匈二元君主國由奧地利與匈牙利兩個平等部分組成：外交、國防與共同財政由共同部長會議處理，內政各自獨立；1867 年 12 月奧地利部分頒布十二月憲法，確立自由主義法治。1868 年又與克羅埃西亞達成納戈德巴協議，給予有限自治。折衷方案讓帝國度過危機，卻使捷克、塞爾維亞等斯拉夫民族被排除於權力之外，民族矛盾日後成為帝國解體的主因。奧地利退出德意志後，外交重心轉向巴爾幹。",
+      "terms": [
+        "Ausgleich",
+        "Dual Monarchy",
+        "December Constitution",
+        "Nagodba"
+      ],
+      "eraLabel": "Austro-Hungarian Compromise"
+    },
+    {
+      "id": "luxembourg_1867",
+      "year": 1867,
+      "dateLabel": "Apr–May 1867",
+      "titleEn": "The Luxembourg Crisis",
+      "titleZh": "盧森堡危機",
+      "type": "crisis",
+      "summaryZh": "1867 年拿破崙三世試圖向荷蘭國王購買盧森堡，俾斯麥反對，普魯士駐軍使危機升高。5 月倫敦會議簽訂倫敦條約：盧森堡中立化、普軍撤出、要塞拆除，列強集體保證其中立。此後盧森堡成為歐洲中立體系的一環。",
+      "detailZh": "盧森堡自 1815 年起與荷蘭共戴一君，並加入德意志邦聯，普魯士在盧森堡市駐軍。1866 年邦聯解散後，拿破崙三世於 1867 年 3 月向荷蘭國王威廉三世提出購買盧森堡，俾斯麥強烈反對，戰爭危機一觸即發。5 月 11 日列強在倫敦簽署條約：盧森堡永久中立，由簽約國集體保證；普魯士撤軍，要塞拆除；盧森堡仍與荷蘭共戴一君，直到 1890 年。此危機被視為歐洲協調制度最後一次成功運作，大國以會議避免戰爭；但法國未獲補償，普魯士威望受損，雙方敵意加深，為 1870 年普法戰爭鋪路。",
+      "terms": [
+        "Luxembourg Crisis",
+        "Treaty of London 1867",
+        "neutrality",
+        "personal union"
+      ],
+      "eraLabel": "Luxembourg neutralized"
+    },
+    {
+      "id": "ngc_1867",
+      "year": 1867,
+      "dateLabel": "1866–1867",
+      "titleEn": "The North German Confederation",
+      "titleZh": "北德意志邦聯成立",
+      "type": "unification",
+      "summaryZh": "1867 年北德意志邦聯成立：普魯士主導，俾斯麥任聯邦總理，設聯邦參議院與普選產生的帝國議會，成員含 22 邦與 3 個自由市。南德諸邦留在邦聯之外，但與普魯士簽有秘密攻守同盟。",
+      "detailZh": "1866 年 8 月，普魯士與北德各邦簽訂條約，1867 年 2 月選出制憲議會，4 月 16 日通過憲法，7 月 1 日生效。北德意志邦聯由普魯士國王擔任聯邦主席，俾斯麥任聯邦總理；聯邦參議院由各邦代表組成，普魯士握有否決關鍵；帝國議會由成年男子普選產生，但權限有限。成員包括薩克森、漢堡、不來梅、呂貝克等 22 邦與 3 自由市。南德的巴伐利亞、符騰堡、巴登與黑森-達姆施塔特南部未加入，但與普魯士簽有秘密攻守同盟，戰時軍隊歸普軍指揮。此架構是 1871 年德意志帝國的藍本，也讓普魯士得以在民族主義旗幟下整合北德；歐洲協調制度對此既成事實只能默認。",
+      "terms": [
+        "North German Confederation",
+        "Bundesrat",
+        "Reichstag",
+        "Bundeskanzler"
+      ],
+      "eraLabel": "North German Confederation"
+    },
+    {
+      "id": "black_sea_1870",
+      "year": 1870,
+      "dateLabel": "Oct 1870 – Mar 1871",
+      "titleEn": "The Black Sea Question",
+      "titleZh": "黑海中立化爭議",
+      "type": "crisis",
+      "summaryZh": "1870 年 10 月 31 日，俄國外相戈爾查科夫趁普法戰爭宣布不再受 1856 年巴黎條約黑海條款約束。列強抗議後召開倫敦會議，1871 年 3 月 13 日倫敦條約廢除黑海中立化，俄國恢復黑海艦隊，但確認鄂圖曼領土完整。",
+      "detailZh": "1856 年巴黎條約規定黑海中立化，禁止俄國在黑海設海軍艦隊與軍港。1870 年 10 月 31 日，俄國外相戈爾查科夫發表通告，宣布該條款已不符情勢，俄國不再受其約束，此舉趁普法戰爭列強無暇他顧。英國、奧地利強烈抗議，俾斯麥則建議召開會議。1871 年 1 至 3 月倫敦會議召開，3 月 13 日簽署倫敦條約：廢除巴黎條約第 11、13、14 條，黑海中立化終止，俄國可重建黑海艦隊；同時確認海峽在和平時期對外國軍艦關閉的原則，並重申鄂圖曼領土完整。俄國以片面聲明達到目的，協調制度無力制裁，只換得形式上的會議背書，象徵 1856 年體系終結。",
+      "terms": [
+        "Gorchakov circular",
+        "Black Sea clauses",
+        "Treaty of London 1871",
+        "denunciation"
+      ],
+      "eraLabel": "Black Sea clauses revoked"
+    },
+    {
+      "id": "franco_prussian_1870",
+      "year": 1870,
+      "dateLabel": "Jul 1870 – Jan 1871",
+      "titleEn": "The Franco-Prussian War",
+      "titleZh": "普法戰爭",
+      "type": "war",
+      "summaryZh": "1870 年 7 月普法戰爭爆發。普軍在維桑堡、沃爾特與格拉沃洛特連勝，9 月 2 日色當戰役俘虜拿破崙三世，第二帝國崩潰；9 月 19 日包圍巴黎，10 月 27 日梅斯投降。1871 年 1 月巴黎停戰，德意志帝國在凡爾賽成立。",
+      "detailZh": "普法戰爭是 1870 年代歐洲最重要的一場戰爭。8 月 4 日普軍攻下維桑堡，8 月 6 日沃爾特與斯皮舍倫之役大勝，8 月 18 日格拉沃洛特-聖普里瓦血戰後法軍退守梅斯。9 月 1 日色當戰役，麥克馬洪軍團被圍，9 月 2 日拿破崙三世率十萬餘人投降，第二帝國滅亡；9 月 4 日巴黎宣布成立國防政府。9 月 19 日普軍包圍巴黎，10 月 27 日巴贊元帥在梅斯投降，12 月奧爾良等地仍有抵抗。1871 年 1 月 18 日德意志帝國在凡爾賽鏡廳宣告成立，1 月 28 日巴黎停戰，2 月 26 日簽初步和約，3 月 1 日德軍短暫進入巴黎。此戰未經任何歐洲會議，勝者直接決定結局，協調制度已無力約束。",
+      "terms": [
+        "Battle of Sedan",
+        "Siege of Metz",
+        "Siege of Paris",
+        "Gravelotte"
+      ],
+      "eraLabel": "War with France"
+    },
+    {
+      "id": "hohenzollern_1870",
+      "year": 1870,
+      "dateLabel": "Jul 1870",
+      "titleEn": "The Hohenzollern Candidacy",
+      "titleZh": "霍亨索倫候選與艾姆斯電報",
+      "type": "crisis",
+      "summaryZh": "1868 年西班牙革命後王位懸空，1870 年霍亨索倫家族的利奧波德在俾斯麥鼓勵下接受候選，法國強烈反對。利奧波德撤回後，法國仍要求威廉一世保證，艾姆斯電報經俾斯麥刪改激化局勢，法國於 7 月 19 日宣戰。",
+      "detailZh": "1868 年西班牙光榮革命推翻伊莎貝拉二世，1869 年制憲後尋找新君主。1870 年 7 月，霍亨索倫-錫格馬林根的利奧波德在俾斯麥與西班牙首相普里姆安排下接受候選，法國外相格拉蒙認為此舉將使法國兩面受敵，強烈抗議。7 月 12 日利奧波德在法國壓力下撤回，但法國要求威廉一世承諾永不再支持霍亨索倫候選。7 月 13 日威廉一世在艾姆斯拒絕，並授權將過程電告俾斯麥；俾斯麥刪改電文、使其語氣強硬後公布，激起兩國民族主義。7 月 19 日法國宣戰。這場危機顯示：外交誤判與輿論動員可以把王朝繼承問題變成戰爭藉口，協調制度毫無介入空間。",
+      "terms": [
+        "Hohenzollern candidacy",
+        "Ems Dispatch",
+        "Leopold of Hohenzollern",
+        "Gramont"
+      ],
+      "eraLabel": "Ems Dispatch"
+    },
+    {
+      "id": "rome_1870",
+      "year": 1870,
+      "dateLabel": "Sep–Oct 1870",
+      "titleEn": "The Annexation of Rome",
+      "titleZh": "羅馬併入義大利",
+      "type": "unification",
+      "summaryZh": "1870 年 9 月 20 日義大利軍隊攻入羅馬，教皇庇護九世退居梵蒂岡，世俗權終結；10 月公投將羅馬併入義大利，1871 年遷都羅馬。法國因普法戰爭撤回駐軍，是義大利得以行動的關鍵。",
+      "detailZh": "羅馬自 1849 年以來由教皇統治，並有法國駐軍保護。1870 年 8 月普法戰爭爆發，法國撤回駐羅馬軍隊，義大利政府決定行動。9 月 20 日，卡多納將軍率軍攻破庇亞門，佔領羅馬，教皇庇護九世退居梵蒂岡，自稱梵蒂岡之囚。10 月 2 日公投以壓倒多數贊成併入義大利；1871 年義大利議會通過保證法，承認教皇人身不可侵犯並給予年金，但教皇拒絕接受。1871 年義大利遷都羅馬。羅馬問題成為義大利與天主教世界關係的長期裂痕，直到 1929 年拉特蘭條約才解決。義大利趁大國戰爭之際完成統一，正是協調制度失靈的另一寫照。",
+      "terms": [
+        "Porta Pia",
+        "Law of Guarantees",
+        "Roman Question",
+        "Papal States"
+      ],
+      "eraLabel": "Rome annexed"
+    },
+    {
+      "id": "concert_collapse",
+      "year": 1871,
+      "dateLabel": "1853–1871",
+      "titleEn": "The Collapse of the Concert of Europe",
+      "titleZh": "歐洲協調制度的瓦解",
+      "type": "crisis",
+      "summaryZh": "1815 年維也納會議建立的歐洲協調制度，以四大國一致與條約保證維持秩序。1853 至 1871 年間，克里米亞、義大利、德意志一系列戰爭皆未經協調，領土由戰勝國逕行決定。1871 年後均勢改由新興德意志帝國主導，協調制度名存實亡。",
+      "detailZh": "歐洲協調制度源於 1815 年維也納會議，由英、俄、奧、普等大國以會議協商處理危機，強調條約神聖、正統主義與均勢。1856 年巴黎會議是其高峰：大國共同保證鄂圖曼領土完整、黑海中立化。但黑海條款缺乏執行力，1859 年義大利戰爭、1863 年波蘭起義、1864 年什勒斯維希戰爭皆顯示大國可為自身利益繞過協調；1866 年普奧戰爭與 1870 年普法戰爭更直接以武力重塑地圖。1871 年倫敦會議雖保住形式，法蘭克福條約卻由戰勝國單方決定，德意志帝國在凡爾賽成立，權力重心轉移至柏林。1880 年代以前協調制度仍偶爾運作，如 1878 年柏林會議，但已非主導力量；一戰前夕的巴爾幹危機終於顯露其徹底破產。",
+      "terms": [
+        "Concert of Europe",
+        "balance of power",
+        "Vienna Congress",
+        "great-power congress"
+      ],
+      "eraLabel": "Concert of Europe collapses"
+    },
+    {
+      "id": "frankfurt_1871",
+      "year": 1871,
+      "dateLabel": "May 1871",
+      "titleEn": "The Treaty of Frankfurt",
+      "titleZh": "法蘭克福條約",
+      "type": "treaty",
+      "summaryZh": "1871 年 5 月 10 日法蘭克福條約：法國割讓亞爾薩斯-洛林（貝爾福除外），賠款 50 億法郎，分期三年付清，德軍佔領法國北部至付清為止。法國承認德意志帝國，歐洲均勢徹底改變。",
+      "detailZh": "法蘭克福條約結束普法戰爭。法國割讓亞爾薩斯（下萊茵、上萊茵，貝爾福除外）與洛林部分（梅斯、蒂永維爾一帶），合稱帝國直轄領亞爾薩斯-洛林；賠款 50 億法郎，三年內付清，德軍佔領法國北部部分地區作為擔保，1873 年付清後撤軍。條約未經國際會議，由戰勝國單方面擬定，與 1856 年巴黎會議的多邊形式形成強烈對比。割地與巨額賠款在法國留下深刻的復仇情緒，也讓德國兼併說德語地區卻帶入大量法語人口，成為日後衝突的根源。對歐洲協調制度而言，這是一記喪鐘：大國不再以會議維持均勢，而是以戰爭與條約直接塑造秩序。",
+      "terms": [
+        "Treaty of Frankfurt",
+        "Alsace-Lorraine",
+        "indemnity",
+        "Reichsland"
+      ],
+      "eraLabel": "Treaty of Frankfurt"
+    },
+    {
+      "id": "german_empire_1871",
+      "year": 1871,
+      "dateLabel": "Jan 1871",
+      "titleEn": "The German Empire",
+      "titleZh": "德意志帝國成立",
+      "type": "unification",
+      "summaryZh": "1871 年 1 月 18 日，德意志諸邦在凡爾賽宮鏡廳宣布成立德意志帝國，威廉一世為德意志皇帝，俾斯麥為帝國總理。帝國採聯邦制，普魯士居主導地位，4 月通過帝國憲法。德意志統一完成，歐洲均勢改寫。",
+      "detailZh": "1871 年 1 月 18 日，德意志各邦君主與軍政要員在凡爾賽宮鏡廳集會，宣布德意志帝國成立，普魯士國王威廉一世加冕為德意志皇帝。此舉刻意選在法國王宮，象徵戰勝與羞辱。4 月 16 日帝國憲法通過：帝國由 25 個邦與亞爾薩斯-洛林直轄領組成，設聯邦參議院與普選的帝國議會；皇帝掌外交與軍權，首相俾斯麥實際主政。普魯士以三分之二人口與壓倒性軍事力量主導帝國。德意志統一採小德意志方案，排除奧地利，完成 1848 年以來民族主義者的目標。對歐洲而言，一個人口與工業實力居大陸之首的新強權誕生，1815 年以來的均勢與協調制度正式走入歷史。",
+      "terms": [
+        "Hall of Mirrors",
+        "German Emperor",
+        "Reichskanzler",
+        "Kleindeutschland"
+      ],
+      "eraLabel": "German Empire proclaimed"
+    },
+    {
+      "id": "berlin_1878",
+      "year": 1878,
+      "dateLabel": "Jun–Jul 1878",
+      "titleEn": "The Congress of Berlin",
+      "titleZh": "柏林會議",
+      "type": "treaty",
+      "summaryZh": "1878 年柏林會議與條約：塞爾維亞、羅馬尼亞、蒙特內哥羅獨立；保加利亞自治，東魯米利亞另設一省；波士尼亞-赫塞哥維納由奧匈佔領；賽普勒斯歸英；俄國取回南比薩拉比亞。",
+      "detailZh": "1875 年赫塞哥維納農民起義揭開巴爾幹危機，1876 年保加利亞四月起義遭鄂圖曼鎮壓，塞爾維亞與蒙特內哥羅對鄂圖曼開戰。1877 年俄國參戰，1878 年 3 月聖斯特凡諾條約建立大保加利亞，引起英奧反對。俾斯麥遂於 6 月至 7 月主持柏林會議，7 月 13 日簽訂柏林條約：保加利亞成為鄂圖曼宗主權下的自治公國，巴爾幹山脈以南另設東魯米利亞自治省；馬其頓歸還鄂圖曼；塞爾維亞、羅馬尼亞、蒙特內哥羅獨立；波士尼亞-赫塞哥維納由奧匈佔領管理；英國取得賽普勒斯的管理權；俄國取得南比薩拉比亞與卡爾斯等地。條約把巴爾幹問題國際化，卻讓塞爾維亞與保加利亞的民族抱負受挫，奧俄在巴爾幹的對立也自此加深。",
+      "terms": [
+        "Treaty of San Stefano",
+        "Congress of Berlin",
+        "autonomous principality",
+        "occupation of Bosnia",
+        "Cyprus Convention"
+      ]
+    },
+    {
+      "id": "thessaly_1881",
+      "year": 1881,
+      "dateLabel": "May 1881",
+      "titleEn": "Thessaly Joins Greece",
+      "titleZh": "希臘取得色薩利",
+      "type": "treaty",
+      "summaryZh": "1881 年 5 月君士坦丁堡條約，鄂圖曼將色薩利與阿爾塔一帶割予希臘，以落實 1878 年柏林會議的邊界承諾，希臘領土與人口大幅擴張，卻仍無法取得克里特與馬其頓。",
+      "detailZh": "柏林條約規定鄂圖曼與希臘應就邊界進行談判，但雙方對色薩利與伊庇魯斯的範圍爭執不下。1880 年列強提出以阿爾塔至薩洛尼卡一線為界的方案，希臘動員軍隊施壓，鄂圖曼則以拖延回應。1881 年 5 月 24 日雙方簽訂君士坦丁堡條約（亦稱色薩利條約）：希臘取得色薩利全境（埃拉索納一帶除外）與伊庇魯斯的阿爾塔地區，鄂圖曼保留伊庇魯斯北部與馬其頓。希臘領土由約四萬七千平方公里增至約六萬三千平方公里，人口增加約三十萬。此舉被視為「偉大理想」的第一步，也讓巴爾幹的領土補償邏輯延續：克里特、伊庇魯斯與馬其頓仍是希臘民族主義的下一個目標。",
+      "terms": [
+        "Convention of Constantinople 1881",
+        "Thessaly",
+        "Arta",
+        "Megali Idea"
+      ]
+    },
+    {
+      "id": "rumelia_1885",
+      "year": 1885,
+      "dateLabel": "Sep 1885 – 1886",
+      "titleEn": "The Union of Bulgaria and Eastern Rumelia",
+      "titleZh": "東魯米利亞併入保加利亞",
+      "type": "unification",
+      "summaryZh": "1885 年 9 月東魯米利亞起義，宣布與保加利亞合併，保加利亞大公亞歷山大一世接納；塞爾維亞入侵失敗。1886 年布加勒斯特條約結束戰爭並確認現狀，鄂圖曼以敕令承認合併，保加利亞實質獨立於鄂圖曼。",
+      "detailZh": "東魯米利亞是 1878 年柏林條約設立的自治省，居民多為保加利亞人，一直以合併為目標。1885 年 9 月 6 日普羅夫迪夫爆發起事，宣布與保加利亞合併，大公亞歷山大一世在壓力下接受，並自任兩地元首。俄國反對這項未經其同意的行動，奧匈則樂見俄國受挫。塞爾維亞國王米蘭覬覦補償，11 月對保加利亞宣戰，卻在斯利夫尼察一役慘敗，保軍反攻至皮羅特。1886 年 3 月 3 日布加勒斯特條約結束塞保戰爭，恢復戰前邊界、確認合併的既成事實；同年 4 月鄂圖曼頒布敕令，承認亞歷山大為東魯米利亞總督，合併獲得國際承認。此後保加利亞雖名義上仍屬鄂圖曼，實際上已獨立行事，直到 1908 年正式宣布獨立。",
+      "terms": [
+        "Eastern Rumelia",
+        "Plovdiv",
+        "Serbo-Bulgarian War",
+        "Treaty of Bucharest 1886",
+        "Tophane Convention"
+      ]
+    },
+    {
+      "id": "norway_1905",
+      "year": 1905,
+      "dateLabel": "Jun–Nov 1905",
+      "titleEn": "The Dissolution of the Swedish-Norwegian Union",
+      "titleZh": "瑞典-挪威聯合解體",
+      "type": "crisis",
+      "summaryZh": "1905 年 6 月挪威議會宣布解散與瑞典的聯合，8 月公投確認，瑞典經卡爾斯塔德協議承認。11 月公投確認君主制，議會選出丹麥的卡爾王子為哈康七世，挪威成為獨立王國，聯合王國和平解體。",
+      "detailZh": "1814 年基爾條約後挪威與瑞典結成共主邦聯，兩國共享國王、外交與領事服務，但挪威保有 1814 年埃茲沃爾憲法與自治議會。十九世紀末，挪威要求設立獨立領事館以保障其龐大商船隊，瑞典國王奧斯卡二世拒絕。1905 年 5 月挪威議會通過領事法案，國王否決後，6 月 7 日議會宣布因國王無法組成政府而解散聯合。8 月 13 日公投以壓倒多數贊成解體；瑞典經談判於 9 月在卡爾斯塔德達成協議，10 月 26 日奧斯卡二世放棄挪威王位。11 月挪威公投確認君主制，議會選出丹麥的卡爾王子，他即位為哈康七世，1906 年在特隆赫姆加冕。挪威以公投與談判完成獨立，成為民族自決和平實踐的範例，並在第一次世界大戰中維持中立。",
+      "terms": [
+        "Treaty of Kiel",
+        "Karlstad Agreement",
+        "Haakon VII",
+        "referendum",
+        "personal union"
+      ]
+    },
+    {
+      "id": "bosnia_1908",
+      "year": 1908,
+      "dateLabel": "Oct 1908 – Mar 1909",
+      "titleEn": "The Bosnian Crisis",
+      "titleZh": "波士尼亞危機",
+      "type": "crisis",
+      "summaryZh": "1908 年 10 月奧匈兼併波士尼亞-赫塞哥維納，保加利亞同時宣布獨立，鄂圖曼抗議但獲金錢補償。塞爾維亞與俄國強烈不滿，德國支持奧匈迫使兩國讓步，波士尼亞危機使巴爾幹局勢急劇升溫。",
+      "detailZh": "波士尼亞-赫塞哥維納自 1878 年起由奧匈佔領管理，名義上仍屬鄂圖曼。1908 年 7 月青年土耳其黨革命後，奧匈外相埃倫塔爾與俄國外相伊茲沃爾斯基在布赫勞會談，換取俄國默許兼併、奧匈支持海峽開放。10 月 6 日奧匈正式兼併兩省；保加利亞於 10 月 5 日宣布獨立，斐迪南親王改稱沙皇。鄂圖曼展開抵制，最終於 1909 年 2 月接受奧匈支付二百五十萬鎊補償。塞爾維亞要求領土補償並動員軍隊，俄國欲召開會議卻被德國阻止；1909 年 3 月德國要求俄國承認兼併，俄國讓步，塞爾維亞被迫低頭。危機雖平息，塞爾維亞的屈辱催生民族主義秘密組織，奧塞關係自此難以挽回，成為 1914 年大戰的遠因之一。",
+      "terms": [
+        "annexation",
+        "Buchlau bargain",
+        "Young Turk Revolution",
+        "Nibelungentreue",
+        "compensation"
+      ]
+    },
+    {
+      "id": "balkan_wars_1912",
+      "year": 1912,
+      "dateLabel": "Oct 1912 – May 1913",
+      "titleEn": "The First Balkan War",
+      "titleZh": "第一次巴爾幹戰爭",
+      "type": "war",
+      "summaryZh": "1912 年 10 月巴爾幹同盟（塞爾維亞、保加利亞、希臘、蒙特內哥羅）對鄂圖曼開戰，連戰皆捷，迅速佔領馬其頓與阿爾巴尼亞；阿爾巴尼亞於 11 月宣布獨立，列強介入阻止塞爾維亞取得亞得里亞海出海口。",
+      "detailZh": "巴爾幹同盟由塞爾維亞、保加利亞、希臘與蒙特內哥羅組成，1912 年 3 月起陸續簽約結盟，10 月對鄂圖曼開戰。保軍在基爾克利塞、呂萊布爾加茲連勝，進逼恰塔爾賈；塞軍在庫馬諾沃、比托拉擊敗鄂圖曼軍；希臘海軍掌握愛琴海並於 11 月 8 日攻下薩洛尼卡；蒙特內哥羅圍攻斯庫台。鄂圖曼在歐洲的統治迅速崩解，阿爾巴尼亞於 11 月 28 日在發羅拉宣布獨立。奧匈與義大利反對塞爾維亞取得亞得里亞海港口，列強遂於倫敦集會，決定另建阿爾巴尼亞國。1913 年 5 月倫敦條約結束戰爭，鄂圖曼割讓米迪亞-埃內茲線以西領土，但巴爾幹同盟各國隨即因馬其頓分贓不均而決裂，第二次巴爾幹戰爭旋即爆發。",
+      "terms": [
+        "Balkan League",
+        "Battle of Kumanovo",
+        "Salonika",
+        "Albanian Declaration of Independence",
+        "Treaty of London 1913"
+      ]
+    },
+    {
+      "id": "london_1913",
+      "year": 1913,
+      "dateLabel": "May–Sep 1913",
+      "titleEn": "The Treaties of London and Bucharest",
+      "titleZh": "倫敦條約與布加勒斯特條約",
+      "type": "treaty",
+      "summaryZh": "1913 年 5 月倫敦條約結束第一次巴爾幹戰爭，阿爾巴尼亞獨立獲列強承認，鄂圖曼僅存東色雷斯；同年 8 月布加勒斯特條約分割馬其頓，塞爾維亞與希臘得地最多，保加利亞憤而尋求復仇。",
+      "detailZh": "倫敦和會由列強大使會議主導，1913 年 5 月 30 日簽訂倫敦條約：鄂圖曼放棄米迪亞-埃內茲線以西的全部歐洲領土，承認阿爾巴尼亞獨立，克里特歸希臘。阿爾巴尼亞的邊界由列強劃定，科索沃與部分阿爾巴尼亞人聚居地劃歸塞爾維亞，成為日後衝突的根源。馬其頓的分割未定，保加利亞先發制人於 6 月進攻塞爾維亞與希臘，第二次巴爾幹戰爭爆發；羅馬尼亞與鄂圖曼也加入圍攻保加利亞。8 月 10 日布加勒斯特條約：保加利亞割讓馬其頓大部予塞爾維亞與希臘、南多布羅加予羅馬尼亞；9 月 29 日君士坦丁堡條約讓鄂圖曼收回亞德里亞堡與東色雷斯。戰後塞爾維亞版圖與聲勢大增，奧匈更加警惕，巴爾幹成為大戰的火藥庫。",
+      "terms": [
+        "Treaty of London 1913",
+        "Treaty of Bucharest 1913",
+        "Treaty of Constantinople 1913",
+        "partition of Macedonia"
+      ]
+    },
+    {
+      "id": "sarajevo_1914",
+      "year": 1914,
+      "dateLabel": "Jun–Aug 1914",
+      "titleEn": "Sarajevo and the July Crisis",
+      "titleZh": "塞拉耶佛事件與七月危機",
+      "type": "crisis",
+      "summaryZh": "1914 年 6 月 28 日奧匈皇儲斐迪南大公在塞拉耶佛遇刺，七月危機中奧匈在德國支持下向塞爾維亞發出最後通牒，各國動員連鎖啟動，7 月底至 8 月初大戰爆發，維也納體系徹底瓦解。",
+      "detailZh": "6 月 28 日，波士尼亞塞爾維亞青年加夫里洛·普林齊普在塞拉耶佛刺殺奧匈皇儲斐迪南大公夫婦。奧匈認定塞爾維亞政府縱容兇手，7 月 23 日提出十項要求的最後通牒，塞爾維亞接受其中九項。7 月 28 日奧匈對塞宣戰；俄國 7 月 30 日總動員，德國 8 月 1 日對俄宣戰、8 月 3 日對法宣戰，並於 8 月 4 日入侵比利時，英國同日參戰。德國原本希望局部化衝突，卻因施里芬計畫與各國動員機制而失控；義大利與羅馬尼亞暫守中立，鄂圖曼則於秋末加入同盟國。這場由巴爾幹刺殺引發的危機在一個月內把全歐洲捲入戰爭，1815 年以來的協調制度與 1871 年後的俾斯麥體系同時終結。",
+      "terms": [
+        "assassination",
+        "July Ultimatum",
+        "Schlieffen Plan",
+        "mobilization",
+        "blank cheque"
+      ]
+    }
+  ],
+  "regionNotes": {
+    "lombardy": "1859 年蘇黎世條約後，倫巴底（曼圖亞、佩斯基耶拉除外）由奧地利歸薩丁尼亞，1861 年起屬義大利王國。",
+    "venetia": "1866 年普奧戰爭後，奧地利經法國將威尼托轉交義大利，11 月公投併入，曼圖亞一併歸義。",
+    "savoy_nice": "1860 年都靈條約割予法國，經 4 月公投確認；薩伏依北部保留中立區，瑞士曾抗議。",
+    "tuscany": "1859 年革命、大公出逃；1860 年 3 月公投併入薩丁尼亞，1861 年起屬義大利。",
+    "modena": "1859 年革命、公爵出逃；1860 年 3 月公投併入薩丁尼亞，1861 年起屬義大利。",
+    "parma": "1859 年革命、公爵出逃；1860 年 3 月公投併入薩丁尼亞，1861 年起屬義大利。",
+    "papal_romagna": "教皇領北部（波隆那、費拉拉等），1859 年革命後由臨時政府掌權，1860 年 3 月公投併入薩丁尼亞。",
+    "papal_marche_umbria": "1860 年 9 月皮埃蒙特軍隊越境擊敗教皇軍（卡斯特爾菲達多），馬爾凱與翁布里亞併入薩丁尼亞。",
+    "papal_lazio": "教皇國僅餘領土，1870 年 9 月 20 日羅馬被義大利佔領，10 月公投併入，教皇退居梵蒂岡。",
+    "two_sicilies": "1860 年加里波底遠征推翻波旁政權，公投併入薩丁尼亞；1861 年加埃塔陷落，王國滅亡。",
+    "schleswig": "1864 年丹麥放棄，普奧共管；1865 年加斯坦歸普魯士管理，1866 年併入普魯士。",
+    "holstein": "1864 年歸普奧共管，1865 年加斯坦歸奧地利；1866 年普奧戰爭後歸普魯士，1867 年併入什勒斯維希-霍爾斯坦省。",
+    "hanover": "1866 年與奧地利同盟戰敗，被普魯士兼併，成為漢諾威省，1871 年隨普魯士加入德意志帝國。",
+    "hesse_kassel": "1866 年支持奧地利，戰後被普魯士兼併，併入黑森-拿騷省。",
+    "nassau": "1866 年與奧地利同盟，戰後被普魯士兼併，併入黑森-拿騷省。",
+    "alsace_lorraine": "1871 年法蘭克福條約割予德意志帝國，設為帝國直轄領；貝爾福因抵抗而保留在法國。",
+    "south_bessarabia": "1856 年巴黎條約由俄國割予摩爾達維亞，1878 年柏林會議歸還俄國。",
+    "greece": "1864 年英國將愛奧尼亞群島割予希臘；希臘領土大體穩定，大希臘主義持續主張擴張。",
+    "serbia": "1856 年巴黎條約確認自治，1867 年鄂圖曼撤軍，1878 年獨立並擴張。",
+    "romania": "1859 年兩公國合選庫扎，1861 年聯合、1862 年稱羅馬尼亞，1866 年卡羅爾一世即位。",
+    "montenegro": "1852 年成為世俗公國，與鄂圖曼衝突不斷，1878 年獨立並獲領土。",
+    "luxembourg": "1867 年倫敦條約中立化，普軍撤出；與荷蘭共戴一君至 1890 年。",
+    "bulgaria_n": "1878 年柏林條約設立的保加利亞自治公國（多瑙河與巴爾幹山脈之間），名義上仍屬鄂圖曼；1885 年與東魯米利亞合併，1908 年宣布獨立。",
+    "east_rumelia": "1878 年柏林條約設立的東魯米利亞自治省，以普羅夫迪夫為中心，名義上歸鄂圖曼；1885 年 9 月宣布與保加利亞合併，1886 年獲承認。",
+    "albania": "1912 年 11 月阿爾巴尼亞在發羅拉宣布獨立；1913 年倫敦會議由列強承認並劃定邊界，科索沃等地劃歸塞爾維亞，大批阿爾巴尼亞人留在境外。",
+    "bosnia": "1878 年柏林條約讓奧匈佔領並管理波士尼亞-赫塞哥維納，1908 年正式兼併，引發波士尼亞危機；1914 年塞拉耶佛事件即發生於此。",
+    "serbia_macedonia": "1913 年布加勒斯特條約後，塞爾維亞取得瓦爾達爾馬其頓與科索沃，版圖幾乎倍增；此區成為塞爾維亞民族主義與奧匈衝突的前線。",
+    "romania_dobruja": "1878 年柏林條約將北多布羅加（多瑙河下游與黑海之間）劃予羅馬尼亞，作為其失去南比薩拉比亞的補償；此後多布羅加成為羅馬尼亞領土。",
+    "greece_thessaly": "1881 年君士坦丁堡條約將色薩利與阿爾塔一帶割予希臘，希臘領土大幅向北推進，人口增加約三十萬；伊庇魯斯北部與馬其頓仍屬鄂圖曼。",
+    "greece_1913": "1913 年布加勒斯特條約與倫敦條約後，希臘取得伊庇魯斯南部、馬其頓南部與克里特，薩洛尼卡入希臘；領土與人口倍增，成為戰後最大受益者。",
+    "crete": "1898 年克里特在列強干預下取得自治，鄂圖曼僅保留名義宗主權，由希臘親王出任高級專員；1913 年倫敦條約後正式歸屬希臘。",
+    "cyprus": "1878 年柏林會議期間英國與鄂圖曼簽約取得賽普勒斯的管理權（名義仍屬鄂圖曼），作為支持鄂圖曼對抗俄國的交換；1914 年英國正式併吞。",
+    "norway": "1814 年起與瑞典為共主邦聯；1905 年 6 月議會宣布解散聯合，經公投與卡爾斯塔德協議獨立，11 月公投確認君主制後迎立哈康七世。",
+    "sweden": "1905 年瑞典-挪威聯合解體後，瑞典僅餘本土，維持中立；1814 年以來未再參與戰爭，專注工業化與社會改革，並逐步發展議會民主。"
+  }
+}
